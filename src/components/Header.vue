@@ -30,7 +30,13 @@
           />
         </a>
       </div>
-      <div class="banner"></div>
+      <div class="banner">
+        <a href="/banner">
+          <Banner
+            imgSrc="https://images.unsplash.com/photo-1593642532400-2682810df593?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80"
+          />
+        </a>
+      </div>
       <div class="tip"></div>
     </header>
   </div>
@@ -39,11 +45,13 @@
 <script>
 import Headline from "./header-components/Headline.vue";
 import NewsCard from "./header-components/NewsCard.vue";
+import Banner from "./header-components/Banner.vue";
 export default {
   name: "Header",
   components: {
     Headline,
     NewsCard,
+    Banner,
   },
   props: {},
 };
@@ -51,6 +59,8 @@ export default {
 
 <style scoped>
 a {
+  width: 100%;
+  height: 100%;
   text-decoration: none;
   color: var(--black-text);
 }
@@ -67,7 +77,7 @@ header {
 
 .headline {
   width: 100%;
-  height: 220px;
+  height: 240px;
   grid-column: 1 / 4;
   grid-row: 1 / 3;
 }
@@ -77,7 +87,7 @@ header {
   grid-row: 1 / 3;
   background-color: white;
   border-radius: 10px;
-  padding: 10px;
+  padding: 20px;
 }
 
 .popular-news {
@@ -96,9 +106,6 @@ header {
   width: 100%;
   grid-column: 1 / 5;
   grid-row: 4 / 6;
-  background-color: white;
-  border-radius: 10px;
-  padding: 10px;
 }
 
 .tip {

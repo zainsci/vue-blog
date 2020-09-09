@@ -42,7 +42,7 @@ export default {
   transform: translateY(-5px);
 }
 .card-img {
-  width: 50%;
+  width: 40%;
   height: 80px;
   max-height: 200px;
   border-radius: 10px;
@@ -59,7 +59,7 @@ export default {
 }
 
 .card-meta {
-  width: 50%;
+  width: 60%;
   margin-left: 10px;
 }
 .card-meta .watch-no {
