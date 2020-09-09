@@ -34,5 +34,6 @@ body {
   height: 100%;
   background-color: #e8eaee;
   margin-top: 70px;
+  font-family: "Montserrat", sans-serif;
 }
 </style>
