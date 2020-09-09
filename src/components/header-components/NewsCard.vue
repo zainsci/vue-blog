@@ -6,7 +6,10 @@
       </div>
     </div>
     <div class="card-meta">
-      <div class="watch-no"></div>
+      <div class="watch-no">
+        <small>{{newsViews}}</small>
+      </div>
+      <h5>{{newsLine}}</h5>
     </div>
   </div>
 </template>
@@ -14,11 +17,13 @@
 <script>
 export default {
   name: "NewsCard",
+  props: {
+    imgSrc: String,
+    newsViews: String,
+    newsLine: String,
+  },
   data() {
-    return {
-      imgSrc:
-        "https://images.unsplash.com/photo-1599592597811-1877b5902834?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1600&q=80",
-    };
+    return {};
   },
 };
 </script>
@@ -30,6 +35,11 @@ export default {
   background-color: white;
   padding: 10px;
   border-radius: 10px;
+  display: flex;
+  transition: 0.25s;
+}
+.card:hover {
+  transform: translateY(-5px);
 }
 .card-img {
   width: 50%;
@@ -46,5 +56,19 @@ export default {
 .card-img img {
   max-width: 100%;
   object-fit: contain;
+}
+
+.card-meta {
+  width: 50%;
+  margin-left: 10px;
+}
+.card-meta .watch-no {
+  font-size: 12px;
+  font-weight: bold;
+  color: #999;
+  margin-bottom: 10px;
+}
+.card-meta h5 {
+  font-size: 12px;
 }
 </style>
