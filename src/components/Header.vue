@@ -6,7 +6,9 @@
           <Headline />
         </a>
       </div>
-      <div class="weather"></div>
+      <div class="weather">
+        <Weather />
+      </div>
       <div class="popular-news">
         <a href="/popnews01">
           <NewsCard
@@ -46,10 +48,13 @@
 import Headline from "./header-components/Headline.vue";
 import NewsCard from "./header-components/NewsCard.vue";
 import Banner from "./header-components/Banner.vue";
+import Weather from "./header-components/Weather.vue";
+
 export default {
   name: "Header",
   components: {
     Headline,
+    Weather,
     NewsCard,
     Banner,
   },
@@ -83,11 +88,9 @@ header {
 }
 .weather {
   width: 100%;
+  height: 240px;
   grid-column: 4 / 6;
   grid-row: 1 / 3;
-  background-color: white;
-  border-radius: 10px;
-  padding: 20px;
 }
 
 .popular-news {
