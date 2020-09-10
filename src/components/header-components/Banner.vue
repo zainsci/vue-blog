@@ -25,7 +25,6 @@ export default {
   width: 100%;
   height: 100%;
   background-color: white;
-  border-radius: 10px;
   padding: 10px;
   position: relative;
   transition: 0.25s;
@@ -39,7 +38,6 @@ export default {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  border-radius: 10px;
   padding: 30px 50px;
   display: flex;
   flex-direction: column;
@@ -53,7 +51,6 @@ export default {
   width: calc(100% - 20px);
   height: calc(100% - 20px);
   background-color: black;
-  border-radius: 10px;
   opacity: 0.35;
   z-index: 1;
 }

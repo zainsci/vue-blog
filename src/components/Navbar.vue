@@ -1,49 +1,57 @@
 <template>
-  <div class="navbar">
-    <div class="logo">
-      <span>B</span>log.
-    </div>
-    <div class="nav-button" v-on:click="displayNavbar">
-      <svg
-        width="1em"
-        height="1em"
-        viewBox="0 0 16 16"
-        class="bi bi-justify"
-        fill="currentColor"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          fill-rule="evenodd"
-          d="M2 12.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"
-        />
-      </svg>
-    </div>
-    <nav class="navbar-nav">
-      <ul>
-        <li>
-          <a href="#">Home</a>
-        </li>
-        <li>
-          <a href="#">Business</a>
-        </li>
-        <li>
-          <a href="#">Notes</a>
-        </li>
-        <li>
-          <a href="#">Health</a>
-        </li>
-        <li>
-          <a href="#">Entertainment</a>
-        </li>
-      </ul>
-      <input type="search" name="search" id="header-search" placeholder="Search" />
-    </nav>
+  <div class="navigation">
+    <Container>
+      <div class="navbar">
+        <div class="logo">
+          <span>B</span>log.
+        </div>
+        <div class="nav-button" v-on:click="displayNavbar">
+          <svg
+            width="1em"
+            height="1em"
+            viewBox="0 0 16 16"
+            class="bi bi-justify"
+            fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M2 12.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"
+            />
+          </svg>
+        </div>
+        <nav class="navbar-nav">
+          <ul>
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#">Business</a>
+            </li>
+            <li>
+              <a href="#">Notes</a>
+            </li>
+            <li>
+              <a href="#">Health</a>
+            </li>
+            <li>
+              <a href="#">Entertainment</a>
+            </li>
+          </ul>
+          <input type="search" name="search" id="header-search" placeholder="Search" />
+        </nav>
+      </div>
+    </Container>
   </div>
 </template>
 
 <script>
+import Container from "./Container.vue";
 export default {
   name: "Navbar",
+  components: {
+    Container,
+  },
   props: {},
   data() {
     return {
@@ -61,6 +69,14 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.navigation {
+  width: 100%;
+  margin: auto;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  z-index: 100000;
+}
 /* Styles For Navbar */
 .navbar {
   width: 100%;
@@ -68,11 +84,9 @@ export default {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 12px 60px;
+  padding: 12px 0;
   font-family: "Montserrat", sans-serif;
   background-color: white;
-  position: fixed;
-  top: 0;
 }
 a {
   text-decoration: none;
