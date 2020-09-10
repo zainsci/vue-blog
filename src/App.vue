@@ -19,7 +19,7 @@ export default {
 </script>
 
 <style>
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Slab:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Domine&display=swap");
 :root {
   --black-text: #33353b;
   --purple: #5444da;
@@ -34,6 +34,20 @@ body {
   height: 100%;
   background-color: #e8eaee;
   margin-top: 70px;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.75;
+  color: var(--black-text);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--black-text);
+  font-family: "Domine", serif;
 }
 </style>

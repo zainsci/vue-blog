@@ -96,7 +96,7 @@ a {
 /* Styles For Logo */
 .logo {
   font-size: 32px;
-  font-family: "Roboto Slab", serif;
+  font-family: "Domine", serif;
   color: var(--black-text);
 }
 .logo > span {
