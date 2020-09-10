@@ -151,6 +151,7 @@ nav input:focus {
     flex-direction: column !important;
     text-align: left;
     transition: 0.2s;
+    padding: 12px 30px;
   }
   .logo {
     width: 100%;
@@ -181,7 +182,7 @@ nav input:focus {
   .nav-button {
     display: flex;
     position: absolute;
-    right: 60px;
+    right: 40px;
     margin-top: 5px;
     cursor: pointer;
   }

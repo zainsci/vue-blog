@@ -1,19 +1,19 @@
 <template>
   <div id="app">
     <Navbar />
-    <Header />
+    <Post postHeaderImg="https://images.unsplash.com/photo-1515311320503-6e3d309537b4?w=1534" />
   </div>
 </template>
 
 <script>
 import Navbar from "./components/Navbar.vue";
-import Header from "./components/Header.vue";
+import Post from "./components/Post.vue";
 
 export default {
   name: "App",
   components: {
     Navbar,
-    Header,
+    Post,
   },
 };
 </script>
