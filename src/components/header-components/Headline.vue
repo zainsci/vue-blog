@@ -4,19 +4,16 @@
       <img :src="imgSrc" alt="Forest" />
     </div>
     <div class="headline-meta">
-      <small>Architecture</small>
-      <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae maxime voluptates obcaecati facere quia esse harum fugit animi dolore perferendis?</h3>
+      <small>{{tag}}</small>
+      <h3>{{title}}</h3>
       <div class="author">
         <a href="/author">
           <div class="author-img">
-            <img
-              src="https://images.unsplash.com/photo-1599601074719-06d93ba4c694?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
-              alt="Person"
-            />
+            <img :src="authImgSrc" alt="Person" />
           </div>
           <div class="author-meta">
-            <div class="name">Zain Shabbir</div>
-            <div class="time">September 9, 2020</div>
+            <div class="name">{{author}}</div>
+            <div class="time">{{time}}</div>
           </div>
         </a>
       </div>
@@ -27,11 +24,16 @@
 <script>
 export default {
   name: "Headline",
+  props: {
+    tag: String,
+    title: String,
+    author: String,
+    time: String,
+    imgSrc: String,
+    authImgSrc: String,
+  },
   data() {
-    return {
-      imgSrc:
-        "https://images.unsplash.com/photo-1599593054067-ebf22632bdb6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
-    };
+    return {};
   },
 };
 </script>

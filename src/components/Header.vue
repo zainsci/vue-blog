@@ -3,7 +3,14 @@
     <header>
       <div class="headline">
         <a href="/headline">
-          <Headline />
+          <Headline
+            tag="Architecture"
+            title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae maxime voluptates obcaecati facere quia?"
+            author="Zain Shabbir"
+            time="September 9, 2020"
+            authImgSrc="https://images.unsplash.com/photo-1599601074719-06d93ba4c694?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+            imgSrc="https://images.unsplash.com/photo-1599593054067-ebf22632bdb6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+          />
         </a>
       </div>
       <div class="weather">
@@ -36,6 +43,8 @@
         <a href="/banner">
           <Banner
             imgSrc="https://images.unsplash.com/photo-1593642532400-2682810df593?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80"
+            bannerTitle="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique ullam asperiores repellendus ex, quis officiis magnam "
+            bannerContent="Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus praesentium ."
           />
         </a>
       </div>
@@ -71,7 +80,7 @@ a {
 }
 header {
   width: 90%;
-  height: calc(100vh - 70px);
+  height: calc(100% - 70px);
   margin: auto;
   padding: 30px;
   display: grid;

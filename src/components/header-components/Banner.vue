@@ -2,8 +2,8 @@
   <div class="banner">
     <div class="banner-img" :style="'background-image: url('+ imgSrc + ')'">
       <div class="banner-tag">Featured</div>
-      <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique ullam asperiores repellendus ex, quis officiis magnam suscipit deleniti eum labore</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus praesentium magni accusamus iure ipsa quaerat.</p>
+      <h3>{{bannerTitle}}</h3>
+      <p>{{bannerContent}}</p>
     </div>
   </div>
 </template>
@@ -13,6 +13,9 @@ export default {
   name: "Banner",
   props: {
     imgSrc: String,
+    bannerTag: String,
+    bannerTitle: String,
+    bannerContent: String,
   },
 };
 </script>
@@ -40,7 +43,7 @@ export default {
   padding: 30px 50px;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 .banner-img::after {
   position: absolute;
@@ -51,7 +54,7 @@ export default {
   height: calc(100% - 20px);
   background-color: black;
   border-radius: 10px;
-  opacity: 0.25;
+  opacity: 0.35;
   z-index: 1;
 }
 .banner-tag {
