@@ -56,13 +56,13 @@ a {
   width: 100%;
   height: 100%;
   text-decoration: none;
-  color: var(--black-text);
+  color: var(--text);
 }
 main {
   height: 100%;
   width: 100%;
   margin: 40px 0;
-  background-color: white;
+  background-color: var(--white);
   padding: 10px;
 }
 
@@ -91,7 +91,7 @@ main {
   padding: 30px;
   margin: 25px;
   word-wrap: break-word;
-  line-height: 1.5;
+  line-height: 1.75;
 }
 .post-body-header {
   margin-bottom: 30px;

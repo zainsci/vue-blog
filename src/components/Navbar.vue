@@ -56,10 +56,10 @@ export default {
   data() {
     return {
       displayNavbar: function () {
-        if (document.querySelector(".navbar").style.height === "340px") {
+        if (document.querySelector(".navbar").style.height === "360px") {
           document.querySelector(".navbar").style.height = "70px";
         } else {
-          document.querySelector(".navbar").style.height = "340px";
+          document.querySelector(".navbar").style.height = "360px";
         }
       },
     };
@@ -72,7 +72,7 @@ export default {
 .navigation {
   width: 100%;
   margin: auto;
-  background-color: white;
+  background-color: var(--white);
   position: fixed;
   top: 0;
   z-index: 100000;
@@ -83,20 +83,20 @@ export default {
   height: 70px;
   display: flex;
   justify-content: space-between;
+  font-family: "Roboto", sans-serif;
   align-items: center;
   padding: 12px 0;
-  font-family: "Montserrat", sans-serif;
-  background-color: white;
+  background-color: var(--white);
 }
 a {
   text-decoration: none;
-  color: var(--black-text);
+  color: var(--text);
 }
 
 /* Styles For Logo */
 .logo {
   font-size: 32px;
-  font-family: "Domine", serif;
+  font-family: "Oswald", sans-serif;
   color: var(--black-text);
 }
 .logo > span {
@@ -163,7 +163,7 @@ nav input:focus {
     flex-direction: column;
     align-items: flex-start;
     width: 100%;
-    background-color: white;
+    background-color: var(--white);
   }
   nav ul {
     flex-direction: column;

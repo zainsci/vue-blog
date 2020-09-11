@@ -19,10 +19,11 @@ export default {
 </script>
 
 <style>
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Domine&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald&family=Roboto&display=swap");
 :root {
-  --black-text: #33353b;
   --purple: #5444da;
+  --white: #fafafa;
+  --text: #000000de;
 }
 * {
   margin: 0;
@@ -34,9 +35,9 @@ body {
   height: 100%;
   background-color: #e8eaee;
   margin-top: 70px;
-  font-family: "Open Sans", sans-serif;
-  line-height: 1.75;
-  color: var(--black-text);
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5;
+  color: var(--text);
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
 }
@@ -47,7 +48,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: var(--black-text);
-  font-family: "Domine", serif;
+  color: var(--text);
+  font-family: "Oswald", sans-serif;
 }
 </style>

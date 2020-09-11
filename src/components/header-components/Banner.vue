@@ -24,7 +24,7 @@ export default {
 .banner {
   width: 100%;
   height: 100%;
-  background-color: white;
+  background-color: var(--white);
   padding: 10px;
   position: relative;
   transition: 0.25s;
