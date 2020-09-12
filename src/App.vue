@@ -1,25 +1,25 @@
 <template>
   <div id="app">
     <Navbar />
-    <Header />
+    <MainHeader />
   </div>
 </template>
 
 <script>
 import Navbar from "./components/Navbar.vue";
-import Header from "./components/Header.vue";
+import MainHeader from "./components/MainHeader.vue";
 
 export default {
   name: "App",
   components: {
     Navbar,
-    Header,
+    MainHeader,
   },
 };
 </script>
 
 <style>
-@import url("https://fonts.googleapis.com/css2?family=Merriweather&family=Merriweather+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald&family=Merriweather+Sans&display=swap");
 
 :root {
   --secondary: #1d689e;
@@ -35,6 +35,7 @@ export default {
 }
 
 #app {
+  font-weight: 400;
   font-family: "Merriweather Sans", sans-serif;
   color: var(--text);
 }
@@ -46,6 +47,8 @@ h4,
 h5,
 h6 {
   margin: 0;
-  font-family: "Merriweather", serif;
+  font-weight: 400;
+  font-family: "Oswald", sans-serif;
+  line-height: 1.25;
 }
 </style>

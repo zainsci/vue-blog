@@ -1,0 +1,53 @@
+<template>
+  <div class="popular" :style="'background-image: url('+ imgSrc +')'">
+    <a href="#">
+      <h4>{{heading}}</h4>
+    </a>
+  </div>
+</template>
+
+<script>
+export default {
+  name: "PopularPost",
+  props: {
+    heading: String,
+    imgSrc: String,
+  },
+};
+</script>
+
+<style scoped>
+* {
+  width: 100%;
+  height: 100%;
+}
+a {
+  text-decoration: none;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+a:hover {
+  background-color: rgba(0, 50, 73, 0.4);
+}
+/* Popular Posts */
+.popular {
+  height: 100%;
+  transition: 0.15s ease-in;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.popular:hover {
+  transform: translateY(-5px);
+}
+.popular h4 {
+  width: 100%;
+  height: fit-content;
+  background-color: var(--secondary);
+  padding: 10px;
+  color: var(--white);
+  font-weight: 400;
+}
+</style>

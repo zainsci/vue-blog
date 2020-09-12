@@ -76,6 +76,7 @@ export default {
   position: fixed;
   top: 0;
   z-index: 100000;
+  border-bottom: 1px solid #eee;
 }
 /* Styles For Navbar */
 .navbar {
@@ -95,7 +96,8 @@ a {
 /* Styles For Logo */
 .logo {
   font-size: 32px;
-  font-family: "Merriweather", serif;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
   color: var(--text);
 }
 .logo > span {
