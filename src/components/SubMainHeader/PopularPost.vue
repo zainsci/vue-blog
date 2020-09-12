@@ -30,6 +30,8 @@ a {
 }
 a:hover {
   background-color: rgba(0, 50, 73, 0.4);
+  box-shadow: -2px 0 2px 0 rgba(0, 0, 0, 0.16), 2px 0 2px 0 rgba(0, 0, 0, 0.16),
+    0 2px 2px 0 rgba(0, 0, 0, 0.23);
 }
 /* Popular Posts */
 .popular {

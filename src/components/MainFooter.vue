@@ -39,6 +39,7 @@ footer {
   background-color: #020607;
   padding: 40px 0;
   position: relative;
+  padding: 20px;
 }
 
 .footer-back-img {
@@ -55,6 +56,8 @@ footer {
   font-size: 64px;
   font-family: "Oswald", sans-serif;
   color: var(--white);
+  position: relative;
+  z-index: 101;
 }
 .logo span {
   color: var(--primary);
@@ -65,9 +68,18 @@ ul {
   color: var(--white);
   list-style-type: none;
   margin-left: 10px;
+  position: relative;
+  z-index: 102;
 }
 ul li a {
   color: var(--white);
   text-decoration: none;
+}
+
+@media (max-width: 575px) {
+  .footer-back-img {
+    width: 100%;
+    z-index: 1;
+  }
 }
 </style>

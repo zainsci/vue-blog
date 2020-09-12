@@ -61,11 +61,14 @@ a {
 }
 a:hover {
   background-color: rgba(0, 50, 73, 0.4);
+  box-shadow: -2px 0 2px 0 rgba(0, 0, 0, 0.16), 2px 0 2px 0 rgba(0, 0, 0, 0.16),
+    0 2px 2px 0 rgba(0, 0, 0, 0.23);
 }
 
 /* Header or Main Posts */
 header {
   margin-top: 100px;
+  margin-bottom: 40px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -109,12 +112,19 @@ header {
 }
 /* Media Queries For Latest Posts */
 @media (max-width: 575px) {
+  header {
+    padding: 0 20px;
+  }
   .latest-post {
     height: 500px;
   }
   .popular-posts {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 250px);
+    height: 100%;
+  }
+  .latest-post a h1 {
+    font-size: 24px;
   }
 }
 </style>
