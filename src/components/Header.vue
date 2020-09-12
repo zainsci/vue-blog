@@ -5,10 +5,12 @@
         class="latest-post"
         style="background-image: url('https://images.unsplash.com/photo-1599811392833-a39014faf967?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80')"
       >
-        <h1>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto,
-          ut porro aut asperiores temporibus in!
-        </h1>
+        <a href="#">
+          <h1>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto,
+            ut porro aut asperiores temporibus in!
+          </h1>
+        </a>
       </div>
       <div class="popular-posts">
         <div
@@ -78,7 +80,7 @@ a:hover {
 
 /* Header or Main Posts */
 header {
-  margin-top: 30px;
+  margin-top: 100px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -91,6 +93,24 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  transition: 0.15s ease-in;
+}
+.latest-post:hover {
+  transform: translateY(-5px);
+}
+.latest-post a {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 20px;
+}
+.latest-post h1 {
+  width: fit-content;
+  height: fit-content;
+  padding: 15px;
+  background-color: var(--secondary);
+  color: var(--white);
 }
 
 /* Popular Posts */
