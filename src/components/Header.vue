@@ -15,28 +15,34 @@
           class="popular"
           style="background-image: url('https://images.unsplash.com/photo-1599820992361-9301b1dfcb15?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=619&q=80')"
         >
-          <h4>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam
-            recusandae!
-          </h4>
+          <a href="#">
+            <h4>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam
+              recusandae!
+            </h4>
+          </a>
         </div>
         <div
           class="popular"
           style="background-image: url('https://images.unsplash.com/photo-1599780930444-b84affddf04a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1100&q=80')"
         >
-          <h4>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam
-            recusandae!
-          </h4>
+          <a href="#">
+            <h4>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam
+              recusandae!
+            </h4>
+          </a>
         </div>
         <div
           class="popular"
           style="background-image: url('https://images.unsplash.com/photo-1599707163582-648451c35634?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=751&q=80')"
         >
-          <h4>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam
-            recusandae!
-          </h4>
+          <a href="#">
+            <h4>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam
+              recusandae!
+            </h4>
+          </a>
         </div>
       </div>
     </header>
@@ -58,6 +64,16 @@ export default {
 * {
   width: 100%;
   height: 100%;
+}
+a {
+  text-decoration: none;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+a:hover {
+  background-color: rgba(0, 50, 73, 0.4);
 }
 
 /* Header or Main Posts */
@@ -90,17 +106,17 @@ header {
 }
 .popular {
   height: 100%;
-  padding: 30px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
+  transition: 0.15s ease-in;
+}
+.popular:hover {
+  transform: translateY(-5px);
 }
 .popular h4 {
   width: 100%;
   height: fit-content;
-  background-color: var(--purple);
-  color: white;
+  background-color: var(--secondary);
   padding: 10px;
+  color: var(--white);
 }
 
 /* Media Queries For Latest Posts */

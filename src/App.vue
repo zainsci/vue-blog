@@ -22,9 +22,9 @@ export default {
 @import url("https://fonts.googleapis.com/css2?family=Merriweather&family=Merriweather+Sans&display=swap");
 
 :root {
-  --secondary: #80ced7ff;
-  --primary: #007ea7ff;
-  --dark: #003249ff;
+  --secondary: #1d689e;
+  --primary: #0366d6;
+  --dark: #032f62;
   --text: #292929;
   --white: #ffffff;
 }
