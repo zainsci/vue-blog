@@ -6,6 +6,7 @@
       postHeaderImg="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=1504"
       authorImg="https://images.unsplash.com/photo-1532657625859-9e44633fabf0?w=1050"
     />
+    <MainFooter />
   </div>
 </template>
 
@@ -13,6 +14,7 @@
 import Navbar from "./components/Navbar.vue";
 // import MainHeader from "./components/MainHeader.vue";
 import Post from "./components/Post.vue";
+import MainFooter from "./components/MainFooter.vue";
 
 export default {
   name: "App",
@@ -20,6 +22,7 @@ export default {
     Navbar,
     // MainHeader,
     Post,
+    MainFooter,
   },
 };
 </script>
@@ -33,6 +36,7 @@ export default {
   --dark: #032f62;
   --text: #292929;
   --white: #ffffff;
+  --black: #111;
 }
 * {
   margin: 0;
