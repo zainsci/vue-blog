@@ -100,4 +100,9 @@ main {
   background-color: #eee;
   padding: 30px;
 }
+
+h1 {
+  line-height: 40px;
+  font-size: 36px;
+}
 </style>

@@ -83,9 +83,8 @@ export default {
   height: 70px;
   display: flex;
   justify-content: space-between;
-  font-family: "Roboto", sans-serif;
+  font-family: "Merriweather Sans", serif;
   align-items: center;
-  padding: 12px 0;
   background-color: var(--white);
 }
 a {
@@ -96,11 +95,11 @@ a {
 /* Styles For Logo */
 .logo {
   font-size: 32px;
-  font-family: "Oswald", sans-serif;
-  color: var(--black-text);
+  font-family: "Merriweather", serif;
+  color: var(--text);
 }
 .logo > span {
-  color: var(--purple);
+  color: var(--primary);
 }
 
 /* Styles For Navigation Menu */
@@ -127,15 +126,15 @@ nav ul li:hover {
 nav input {
   width: 180px;
   height: 40px;
-  border: 1px solid #dfdfdf;
+  border: 1px solid var(--secondary);
   border-radius: 7px;
   padding: 8px 12px;
-  margin-left: 30px;
+  margin-left: 20px;
   transition: 0.1s;
 }
 nav input:focus {
   outline: none;
-  border: 2px solid var(--purple);
+  border: 2px solid var(--secondary);
 }
 
 /* Style For Button */
