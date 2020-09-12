@@ -2,7 +2,10 @@
   <div id="app">
     <Navbar />
     <!-- <MainHeader /> -->
-    <Post postHeaderImg="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=1504" />
+    <Post
+      postHeaderImg="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=1504"
+      authorImg="https://images.unsplash.com/photo-1532657625859-9e44633fabf0?w=1050"
+    />
   </div>
 </template>
 

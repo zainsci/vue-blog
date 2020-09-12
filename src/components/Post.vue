@@ -48,9 +48,18 @@
           </small>
         </div>
         <div class="author">
-          <div class="author-img"></div>
+          <div class="author-img" :style="'background-image: url('+authorImg+')'"></div>
+          <div class="author-meta">
+            <div class="author-name">
+              <a href="#">
+                <h3>Zain Shabbir</h3>
+              </a>
+            </div>
+            <div class="author-desc">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, libero!</p>
+            </div>
+          </div>
         </div>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio fuga assumenda dolor accusamus.</p>
       </footer>
     </div>
   </Container>
@@ -64,7 +73,7 @@ export default {
   components: {
     Container,
   },
-  props: { postHeaderImg: String },
+  props: { postHeaderImg: String, authorImg: String },
 };
 </script>
 
@@ -127,6 +136,8 @@ main {
 
 /* NewsLetter */
 .newsletter {
+  max-width: 680px;
+  margin: 32px auto;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -134,7 +145,6 @@ main {
   padding: 30px;
   border-top: 3px solid var(--primary);
   background-color: #eee;
-  margin: 32px 0;
 }
 .newsletter h2 span {
   height: 28px;
@@ -190,6 +200,32 @@ main {
   font-size: 12px;
   color: #999;
   margin-top: 15px;
+}
+
+/* Author Details Card */
+.author {
+  width: 100%;
+  height: 160px;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.author-img {
+  min-width: 100px;
+  min-height: 100px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.author-meta {
+  width: 100%;
+}
+.author-name {
+  margin-bottom: 10px;
 }
 
 /* Media Queries */
