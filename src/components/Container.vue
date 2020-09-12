@@ -15,10 +15,17 @@ export default {};
   margin: auto;
 }
 
+@media (max-width: 576px) {
+  .container {
+    width: 100%;
+    margin: auto;
+  }
+}
+
 @media (min-width: 576px) {
   .container {
     width: 100%;
-    margin: 0;
+    margin: auto;
   }
 }
 

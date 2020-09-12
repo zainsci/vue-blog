@@ -89,7 +89,7 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  padding: 20px;
+  padding: 30px;
 }
 .latest-post h1 {
   width: fit-content;
