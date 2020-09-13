@@ -68,8 +68,7 @@ a:hover {
 
 /* Header or Main Posts */
 header {
-  margin-top: 100px;
-  margin-bottom: 40px;
+  margin: 40px 0;
   display: flex;
   flex-direction: column;
   justify-content: center;

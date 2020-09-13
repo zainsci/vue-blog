@@ -47,6 +47,17 @@ export default {
   box-sizing: border-box;
 }
 
+html {
+  height: 100%;
+}
+body {
+  min-height: 100vh;
+  padding-top: 70px;
+}
+img {
+  width: 100%;
+  height: auto;
+}
 #app {
   font-weight: 400;
   font-family: "Merriweather Sans", sans-serif;
