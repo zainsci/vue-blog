@@ -29,66 +29,66 @@ export default {
           readTime: "5 Min",
           authImg:
             "https://images.unsplash.com/photo-1599912027765-a69c78bfa3aa?w=500",
-          authImgAlt: "Fire Oven",
+          authImgAlt: "Computer",
           postImg:
             "https://images.unsplash.com/photo-1599918350363-44f621829253?w=1046",
-          postImgAlt: "Red Padded Chairs Inside Building",
+          postImgAlt: "Post Image Here",
           postTitle:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, corrupti!",
         },
         {
           key: 2,
           authorName: "Zain Shabbir",
-          date: "13 Sep",
-          readTime: "5 Min",
+          date: "12 Sep",
+          readTime: "10 Min",
           authImg:
-            "https://images.unsplash.com/photo-1599912027765-a69c78bfa3aa?w=500",
-          authImgAlt: "Fire Oven",
+            "https://images.unsplash.com/photo-1538652116325-8f5fa30fefff?w=500",
+          authImgAlt: "Computer",
           postImg:
-            "https://images.unsplash.com/photo-1599918350363-44f621829253?w=1046",
-          postImgAlt: "Red Padded Chairs Inside Building",
+            "https://images.unsplash.com/photo-1599927260303-ea937f6a1beb?w=1046",
+          postImgAlt: "Post Image Here",
           postTitle:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, corrupti!",
         },
         {
           key: 3,
           authorName: "Zain Shabbir",
-          date: "13 Sep",
-          readTime: "5 Min",
+          date: "11 Sep",
+          readTime: "15 Min",
           authImg:
-            "https://images.unsplash.com/photo-1599912027765-a69c78bfa3aa?w=500",
-          authImgAlt: "Fire Oven",
+            "https://images.unsplash.com/photo-1529767203443-a617595c8825?w=500",
+          authImgAlt: "Computer",
           postImg:
-            "https://images.unsplash.com/photo-1599918350363-44f621829253?w=1046",
-          postImgAlt: "Red Padded Chairs Inside Building",
+            "https://images.unsplash.com/photo-1592112500306-32f94fd365b4?w=1046",
+          postImgAlt: "Post Image Here",
           postTitle:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, corrupti!",
         },
         {
           key: 4,
           authorName: "Zain Shabbir",
-          date: "13 Sep",
-          readTime: "5 Min",
+          date: "10 Sep",
+          readTime: "15 Min",
           authImg:
-            "https://images.unsplash.com/photo-1599912027765-a69c78bfa3aa?w=500",
-          authImgAlt: "Fire Oven",
+            "https://images.unsplash.com/photo-1529338296731-c4280a44fc48?w=500",
+          authImgAlt: "Computer",
           postImg:
-            "https://images.unsplash.com/photo-1599918350363-44f621829253?w=1046",
-          postImgAlt: "Red Padded Chairs Inside Building",
+            "https://images.unsplash.com/photo-1584649143797-0e91c27b7847?w=1046",
+          postImgAlt: "Post Image Here",
           postTitle:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, corrupti!",
         },
         {
           key: 5,
           authorName: "Zain Shabbir",
-          date: "13 Sep",
-          readTime: "5 Min",
+          date: "09 Sep",
+          readTime: "20 Min",
           authImg:
-            "https://images.unsplash.com/photo-1599912027765-a69c78bfa3aa?w=500",
-          authImgAlt: "Fire Oven",
+            "https://images.unsplash.com/photo-1597514110707-b988d3a08652?w=500",
+          authImgAlt: "Computer",
           postImg:
-            "https://images.unsplash.com/photo-1599918350363-44f621829253?w=1046",
-          postImgAlt: "Red Padded Chairs Inside Building",
+            "https://images.unsplash.com/photo-1584596959401-18872e9ccdd3?w=1046",
+          postImgAlt: "Post Image Here",
           postTitle:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, corrupti!",
         },
