@@ -66,6 +66,7 @@ export default {
   width: 100%;
   height: 100%;
 }
+
 /* Posts Thumbnail */
 .post-thumb {
   width: 100%;
@@ -75,6 +76,13 @@ export default {
   border-radius: 10px;
   border: 1px solid #eee;
   margin-bottom: 30px;
+  transition: 0.15s ease-in;
+}
+.post-thumb:hover {
+  transform: translateY(-5px);
+  -webkit-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.25);
 }
 
 /* Posts Author */

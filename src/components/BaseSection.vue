@@ -2,7 +2,9 @@
   <BaseContainer>
     <section>
       <div class="posts-column">
-        <SectionPostThumb :Posts="posts" />
+        <a href="#">
+          <SectionPostThumb :Posts="posts" />
+        </a>
       </div>
       <div class="popular-column"></div>
     </section>
@@ -117,5 +119,13 @@ section {
   width: 100%;
   height: 100%;
   grid-column: 2/3;
+}
+
+a {
+  width: 100%;
+  height: 100%;
+  color: var(--text);
+  text-decoration: none;
+  transition: 0.15 ease-in;
 }
 </style>
