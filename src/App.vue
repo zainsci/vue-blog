@@ -1,27 +1,30 @@
 <template>
   <div id="app">
-    <Navbar />
+    <TheNavbar />
     <TheHeader />
-    <Post
-      postHeaderImg="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=1504"
-      authorImg="https://images.unsplash.com/photo-1532657625859-9e44633fabf0?w=1050"
+    <BaseAdBanner
+      bannerHeight="150px"
+      bannerImg="https://images.unsplash.com/photo-1599904182194-d519a3268229?w=1229"
     />
+    <BaseSection />
     <TheFooter />
   </div>
 </template>
 
 <script>
-import Navbar from "./components/Navbar.vue";
+import TheNavbar from "./components/TheNavbar.vue";
 import TheHeader from "./components/TheHeader.vue";
-import Post from "./components/Post.vue";
+import BaseAdBanner from "./components/BaseAdBanner.vue";
+import BaseSection from "./components/BaseSection.vue";
 import TheFooter from "./components/TheFooter.vue";
 
 export default {
   name: "App",
   components: {
-    Navbar,
+    TheNavbar,
     TheHeader,
-    Post,
+    BaseAdBanner,
+    BaseSection,
     TheFooter,
   },
 };

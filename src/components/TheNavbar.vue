@@ -48,7 +48,7 @@
 <script>
 import BaseContainer from "./BaseContainer.vue";
 export default {
-  name: "Navbar",
+  name: "TheNavbar",
   components: {
     BaseContainer,
   },

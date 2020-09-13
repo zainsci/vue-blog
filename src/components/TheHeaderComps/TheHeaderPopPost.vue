@@ -30,8 +30,9 @@ a {
 }
 a:hover {
   background-color: rgba(0, 50, 73, 0.4);
-  box-shadow: -2px 0 2px 0 rgba(0, 0, 0, 0.16), 2px 0 2px 0 rgba(0, 0, 0, 0.16),
-    0 2px 2px 0 rgba(0, 0, 0, 0.23);
+  -webkit-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.25);
 }
 /* Popular Posts */
 .popular {
