@@ -8,7 +8,7 @@
 
 <script>
 export default {
-  name: "PopularPost",
+  name: "TheHeaderPopPost",
   props: {
     heading: String,
     imgSrc: String,

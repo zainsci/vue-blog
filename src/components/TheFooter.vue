@@ -1,6 +1,6 @@
 <template>
   <footer>
-    <Container>
+    <BaseContainer>
       <div class="logo">
         <span>B</span>LOG.
       </div>
@@ -15,7 +15,7 @@
           <a href="#">Contact</a>
         </li>
       </ul>
-    </Container>
+    </BaseContainer>
     <div
       class="footer-back-img"
       style="background-image: url(https://images.unsplash.com/photo-1484950763426-56b5bf172dbb?w=1050)"
@@ -24,10 +24,10 @@
 </template>
 
 <script>
-import Container from "./Container.vue";
+import BaseContainer from "./BaseContainer.vue";
 export default {
-  name: "MainFooter",
-  components: { Container },
+  name: "TheFooter",
+  components: { BaseContainer },
   props: {},
 };
 </script>
