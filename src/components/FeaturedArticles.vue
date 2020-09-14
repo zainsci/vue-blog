@@ -4,48 +4,84 @@
       <div class="jumbotron">
         <div class="featured">
           <div class="feature-post">
+            <div class="feature-title">
+              <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a>
+            </div>
+            <div class="feature-auth">
+              <span>
+                <a href="#">Zain Shabbir</a>
+              </span> · Sep 14, 2020
+            </div>
             <div class="feature-img">
               <img
                 src="https://images.unsplash.com/photo-1599930621917-b22b8d5ab1c2?w=1054"
                 alt="Valley"
               />
             </div>
-            <div
-              class="feature-title"
-            >Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, aperiam?</div>
+            <div class="feature-content">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore alias quae culpa, cupiditate vero id!...</p>
+              <a href="#">Read More</a>
+            </div>
           </div>
           <div class="feature-post">
+            <div class="feature-title">
+              <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a>
+            </div>
+            <div class="feature-auth">
+              <span>
+                <a href="#">Zain Shabbir</a>
+              </span> · Sep 14, 2020
+            </div>
             <div class="feature-img">
               <img
                 src="https://images.unsplash.com/photo-1599930621917-b22b8d5ab1c2?w=1054"
                 alt="Valley"
               />
             </div>
-            <div
-              class="feature-title"
-            >Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, aperiam?</div>
+            <div class="feature-content">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore alias quae culpa, cupiditate vero id!...</p>
+              <a href="#">Read More</a>
+            </div>
           </div>
           <div class="feature-post">
+            <div class="feature-title">
+              <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a>
+            </div>
+            <div class="feature-auth">
+              <span>
+                <a href="#">Zain Shabbir</a>
+              </span> · Sep 14, 2020
+            </div>
             <div class="feature-img">
               <img
                 src="https://images.unsplash.com/photo-1599930621917-b22b8d5ab1c2?w=1054"
                 alt="Valley"
               />
             </div>
-            <div
-              class="feature-title"
-            >Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, aperiam?</div>
+            <div class="feature-content">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore alias quae culpa, cupiditate vero id!...</p>
+              <a href="#">Read More</a>
+            </div>
           </div>
           <div class="feature-post">
+            <div class="feature-title">
+              <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a>
+            </div>
+            <div class="feature-auth">
+              <span>
+                <a href="#">Zain Shabbir</a>
+              </span> · Sep 14, 2020
+            </div>
             <div class="feature-img">
               <img
                 src="https://images.unsplash.com/photo-1599930621917-b22b8d5ab1c2?w=1054"
                 alt="Valley"
               />
             </div>
-            <div
-              class="feature-title"
-            >Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, aperiam?</div>
+            <div class="feature-content">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore alias quae culpa, cupiditate vero id!...</p>
+              <a href="#">Read More</a>
+            </div>
           </div>
         </div>
         <div class="latest">
@@ -91,6 +127,7 @@ section {
   width: 100%;
   display: grid;
   grid-template-columns: 2fr 1fr;
+  grid-gap: 20px;
   padding: 60px 0;
 }
 
@@ -99,10 +136,20 @@ section {
   height: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
 }
 .feature-post {
-  padding: 10px;
+  padding: 20px;
   margin: 20px auto;
+  background-color: var(--white);
+}
+
+.feature-auth {
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+.feature-auth span {
+  font-weight: 600;
 }
 .feature-img {
   width: 100%;
@@ -111,8 +158,13 @@ section {
   margin-bottom: 10px;
 }
 .feature-title {
-  color: var(--white);
+  color: var(--text);
   font-size: 24px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+.feature-content p {
+  margin-bottom: 10px;
 }
 
 .latest {
@@ -131,7 +183,6 @@ section {
 }
 a {
   text-decoration: none;
-  color: var(--white);
-  font-size: 24px;
+  color: var(--primary);
 }
 </style>
