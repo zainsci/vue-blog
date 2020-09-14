@@ -85,21 +85,82 @@
           </div>
         </div>
         <div class="latest">
+          <header>
+            <span>Don't</span>
+            Miss
+          </header>
           <ul>
             <li>
-              <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing.</a>
+              <div class="latest-title">
+                <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing.</a>
+              </div>
+              <div class="latest-meta">
+                <span class="latest-meta-name">Zain Ansari</span>
+                <span class="latest-meta-time">Sep 14, 2020</span>
+              </div>
             </li>
             <li>
-              <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing.</a>
+              <div class="latest-title">
+                <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing.</a>
+              </div>
+              <div class="latest-meta">
+                <span class="latest-meta-name">Zain Ansari</span>
+                <span class="latest-meta-time">Sep 14, 2020</span>
+              </div>
             </li>
             <li>
-              <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing.</a>
+              <div class="latest-title">
+                <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing.</a>
+              </div>
+              <div class="latest-meta">
+                <span class="latest-meta-name">Zain Ansari</span>
+                <span class="latest-meta-time">Sep 14, 2020</span>
+              </div>
             </li>
             <li>
-              <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing.</a>
+              <div class="latest-title">
+                <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing.</a>
+              </div>
+              <div class="latest-meta">
+                <span class="latest-meta-name">Zain Ansari</span>
+                <span class="latest-meta-time">Sep 14, 2020</span>
+              </div>
             </li>
             <li>
-              <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing.</a>
+              <div class="latest-title">
+                <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing.</a>
+              </div>
+              <div class="latest-meta">
+                <span class="latest-meta-name">Zain Ansari</span>
+                <span class="latest-meta-time">Sep 14, 2020</span>
+              </div>
+            </li>
+            <li>
+              <div class="latest-title">
+                <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing.</a>
+              </div>
+              <div class="latest-meta">
+                <span class="latest-meta-name">Zain Ansari</span>
+                <span class="latest-meta-time">Sep 14, 2020</span>
+              </div>
+            </li>
+            <li>
+              <div class="latest-title">
+                <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing.</a>
+              </div>
+              <div class="latest-meta">
+                <span class="latest-meta-name">Zain Ansari</span>
+                <span class="latest-meta-time">Sep 14, 2020</span>
+              </div>
+            </li>
+            <li>
+              <div class="latest-title">
+                <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing.</a>
+              </div>
+              <div class="latest-meta">
+                <span class="latest-meta-name">Zain Ansari</span>
+                <span class="latest-meta-time">Sep 14, 2020</span>
+              </div>
             </li>
           </ul>
         </div>
@@ -120,7 +181,7 @@ export default {
 <style scoped>
 section {
   width: 100%;
-  background-color: var(--dark);
+  background-color: #eee;
   margin-top: 60px;
 }
 .jumbotron {
@@ -138,6 +199,13 @@ section {
   grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
 }
+.featured a {
+  text-decoration: none;
+  color: var(--text);
+}
+.feature-post:hover a {
+  color: var(--primary);
+}
 .feature-post {
   padding: 20px;
   margin: 20px auto;
@@ -146,7 +214,7 @@ section {
 
 .feature-auth {
   margin-bottom: 20px;
-  font-size: 14px;
+  font-size: 12px;
 }
 .feature-auth span {
   font-weight: 600;
@@ -173,6 +241,17 @@ section {
   display: flex;
   flex-direction: column;
 }
+.latest a {
+  text-decoration: none;
+  color: var(--text);
+}
+.latest header {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--text);
+  padding: 10px;
+  margin-bottom: 10px;
+}
 .latest ul {
   list-style: none;
 }
@@ -180,9 +259,24 @@ section {
   height: 100px;
   padding: 18px 12px;
   margin-bottom: 10px;
+  border-bottom: 1px solid var(--text);
 }
-a {
-  text-decoration: none;
+.latest ul li:hover a {
   color: var(--primary);
+}
+.latest-title {
+  margin-bottom: 10px;
+}
+
+.latest-meta {
+  font-size: 10px;
+}
+.latest-meta-name {
+  color: var(--text);
+  font-weight: 600;
+  margin-right: 10px;
+}
+.latest-meta-time {
+  color: var(--text);
 }
 </style>
