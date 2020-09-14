@@ -40,6 +40,13 @@ a {
   padding: 20px;
   margin: 20px auto;
   background-color: var(--white);
+  transition: var(--primary-trans);
+}
+.feature-post:hover {
+  transform: translateY(-5px);
+  -webkit-box-shadow: var(--primary-box-shadow);
+  -moz-box-shadow: var(--primary-box-shadow);
+  box-shadow: var(--primary-box-shadow);
 }
 
 .feature-auth {
