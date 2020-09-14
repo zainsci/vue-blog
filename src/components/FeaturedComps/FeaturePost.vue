@@ -1,18 +1,19 @@
 <template>
   <div class="feature-post">
     <div class="feature-title">
-      <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a>
+      <a href="#">{{feature.title}}</a>
     </div>
     <div class="feature-auth">
       <span>
-        <a href="#">Zain Ansari</a>
-      </span> · Sep 14, 2020
+        <a href="#">{{feature.author}}</a>
+      </span>
+      · {{feature.date}}
     </div>
     <div class="feature-img">
-      <img src="https://images.unsplash.com/photo-1599930621917-b22b8d5ab1c2?w=1054" alt="Valley" />
+      <img :src="feature.imgSrc" :alt="feature.imgAlt" />
     </div>
     <div class="feature-content">
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore alias quae culpa, cupiditate vero id!...</p>
+      <p>{{feature.content}}...</p>
       <a href="#">Read More</a>
     </div>
   </div>
@@ -21,6 +22,9 @@
 <script>
 export default {
   name: "FeaturePost",
+  props: {
+    feature: Object,
+  },
 };
 </script>
 

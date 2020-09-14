@@ -5,76 +5,15 @@
       Miss
     </header>
     <ul>
-      <li>
+      <li v-for="every in latest" :key="every.key">
         <div class="latest-title">
-          <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing.</a>
+          <a href="#">{{every.title}}</a>
         </div>
         <div class="latest-meta">
-          <span class="latest-meta-name">Zain Ansari</span>
-          <span class="latest-meta-time">Sep 14, 2020</span>
-        </div>
-      </li>
-      <li>
-        <div class="latest-title">
-          <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing.</a>
-        </div>
-        <div class="latest-meta">
-          <span class="latest-meta-name">Zain Ansari</span>
-          <span class="latest-meta-time">Sep 14, 2020</span>
-        </div>
-      </li>
-      <li>
-        <div class="latest-title">
-          <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing.</a>
-        </div>
-        <div class="latest-meta">
-          <span class="latest-meta-name">Zain Ansari</span>
-          <span class="latest-meta-time">Sep 14, 2020</span>
-        </div>
-      </li>
-      <li>
-        <div class="latest-title">
-          <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing.</a>
-        </div>
-        <div class="latest-meta">
-          <span class="latest-meta-name">Zain Ansari</span>
-          <span class="latest-meta-time">Sep 14, 2020</span>
-        </div>
-      </li>
-      <li>
-        <div class="latest-title">
-          <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing.</a>
-        </div>
-        <div class="latest-meta">
-          <span class="latest-meta-name">Zain Ansari</span>
-          <span class="latest-meta-time">Sep 14, 2020</span>
-        </div>
-      </li>
-      <li>
-        <div class="latest-title">
-          <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing.</a>
-        </div>
-        <div class="latest-meta">
-          <span class="latest-meta-name">Zain Ansari</span>
-          <span class="latest-meta-time">Sep 14, 2020</span>
-        </div>
-      </li>
-      <li>
-        <div class="latest-title">
-          <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing.</a>
-        </div>
-        <div class="latest-meta">
-          <span class="latest-meta-name">Zain Ansari</span>
-          <span class="latest-meta-time">Sep 14, 2020</span>
-        </div>
-      </li>
-      <li>
-        <div class="latest-title">
-          <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing.</a>
-        </div>
-        <div class="latest-meta">
-          <span class="latest-meta-name">Zain Ansari</span>
-          <span class="latest-meta-time">Sep 14, 2020</span>
+          <a href="#">
+            <span class="latest-meta-name">{{every.author}}</span>
+          </a>
+          <span class="latest-meta-time">{{every.date}}</span>
         </div>
       </li>
     </ul>
@@ -84,7 +23,7 @@
 <script>
 export default {
   name: "LatestPosts",
-  props: {},
+  props: { latest: Array },
 };
 </script>
 
