@@ -32,11 +32,11 @@ export default {
 .banner {
   width: 100%;
   background-color: var(--white);
-  -webkit-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.25);
-  -moz-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.25);
-  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: var(--primary-box-shadow);
+  -moz-box-shadow: var(--primary-box-shadow);
+  box-shadow: var(--primary-box-shadow);
   padding: 10px;
-  transition: 0.15s ease-in;
+  transition: var(--primary-trans);
   position: relative;
 }
 .banner::before {
@@ -79,8 +79,8 @@ a {
 }
 a:hover .banner {
   transform: translateY(-5px);
-  -webkit-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.25);
-  -moz-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.25);
-  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: var(--primary-box-shadow);
+  -moz-box-shadow: var(--primary-box-shadow);
+  box-shadow: var(--primary-box-shadow);
 }
 </style>

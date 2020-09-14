@@ -30,14 +30,14 @@ a {
 }
 a:hover {
   background-color: rgba(0, 50, 73, 0.4);
-  -webkit-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.25);
-  -moz-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.25);
-  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: var(--primary-box-shadow);
+  -moz-box-shadow: var(--primary-box-shadow);
+  box-shadow: var(--primary-box-shadow);
 }
 /* Popular Posts */
 .popular {
   height: 100%;
-  transition: 0.15s ease-in;
+  transition: var(--primary-trans);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

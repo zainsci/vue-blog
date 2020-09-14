@@ -3,7 +3,7 @@
     <section>
       <div class="posts-column">
         <a href="#">
-          <SectionPostThumb :Posts="posts" />
+          <UserPost :Posts="posts" />
         </a>
       </div>
       <div class="popular-column"></div>
@@ -13,13 +13,13 @@
 
 <script>
 import BaseContainer from "./BaseContainer.vue";
-import SectionPostThumb from "./BaseSectionComps/SectionPostThumb.vue";
+import UserPost from "./BaseSectionComps/UserPost.vue";
 
 export default {
-  name: "BaseSection",
+  name: "BaseUserPosts",
   components: {
     BaseContainer,
-    SectionPostThumb,
+    UserPost,
   },
   data() {
     return {
@@ -107,7 +107,7 @@ section {
   width: 100%;
   height: 100%;
   display: grid;
-  grid-template-columns: 1fr 300px;
+  grid-template-columns: 1fr 400px;
   margin-top: 40px;
 }
 .posts-column {

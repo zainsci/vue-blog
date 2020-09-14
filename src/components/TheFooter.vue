@@ -1,25 +1,25 @@
 <template>
   <footer>
     <BaseContainer>
-      <div class="logo">
-        <span>B</span>LOG.
+      <div>
+        <div class="logo">
+          <span>B</span>LOG.
+        </div>
+        <ul>
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">About</a>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
+        </ul>
       </div>
-      <ul>
-        <li>
-          <a href="#">Home</a>
-        </li>
-        <li>
-          <a href="#">About</a>
-        </li>
-        <li>
-          <a href="#">Contact</a>
-        </li>
-      </ul>
+      <div class="categories"></div>
+      <div class="social-media"></div>
     </BaseContainer>
-    <div
-      class="footer-back-img"
-      style="background-image: url(https://images.unsplash.com/photo-1484950763426-56b5bf172dbb?w=1050)"
-    ></div>
   </footer>
 </template>
 
