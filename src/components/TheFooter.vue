@@ -58,11 +58,26 @@
       </div>
 
       <div class="lower-footer">
+        <div class="our-story">
+          <h4>Our Story</h4>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos iste eius dolorem dolores itaque perferendis provident nemo facilis. Corporis asperiores repudiandae error reiciendis modi, architecto sint natus eius ullam distinctio.</p>
+        </div>
+        <ul class="nav-links">
+          <li>
+            <a href="#">About</a>
+          </li>
+          <li>
+            <a href="#">Contant</a>
+          </li>
+          <li>
+            <a href="#">Follow Us</a>
+          </li>
+        </ul>
         <div class="newsletter">
-          <p>Sign-Up for the Newsletter</p>
+          <p>Sign Up for the Newsletter</p>
           <form action="/">
-            <input type="email" />
-            <button type="submit">Send</button>
+            <input type="email" class="newsletter-input" />
+            <button type="submit" class="newsletter-button">Send</button>
           </form>
         </div>
       </div>
@@ -89,10 +104,10 @@ ul {
 }
 footer {
   width: 100%;
-  height: 400px;
+  height: 100%;
   background-color: #020607;
   position: relative;
-  padding: 20px;
+  padding: 20px 20px 40px 20px;
 }
 .upper-footer {
   display: flex;
@@ -124,13 +139,81 @@ footer {
   margin-right: 20px;
 }
 
-/* Links */
+/* Lower Footer */
 .lower-footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  color: var(--white);
 }
 
+.our-story {
+  width: 100%;
+  padding: 0 10px;
+}
+.our-story h4 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.nav-links {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  font-family: "Merriweather Sans", sans-serif;
+  font-weight: 600;
+}
+.nav-links li {
+  margin-bottom: 10px;
+}
+
+.newsletter {
+  width: 100%;
+  height: 100%;
+  padding: 0 10px;
+}
+.newsletter p {
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-family: "Merriweather Sans", sans-serif;
+  font-weight: 600;
+}
+.newsletter form {
+  width: 100%;
+  height: 50px;
+  position: relative;
+}
+
+.newsletter-input {
+  width: 100%;
+  height: 100%;
+  border: 2px solid var(--secondary);
+  border-radius: 4px;
+  background-color: #020607;
+  padding: 8px 62px 8px 12px;
+  font-size: 18px;
+}
+.newsletter-input:focus {
+  outline: none;
+  border: 3px solid var(--primary);
+}
+
+.newsletter-button {
+  font-size: 18px;
+  padding: 6.5px 12px;
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  background-color: var(--secondary);
+  color: var(--white);
+  border: 2px solid var(--secondary);
+  border-radius: 4px;
+}
+.newsletter-button:hover {
+  background-color: var(--primary);
+  border: 2px solid var(--primary);
+}
+
+/* Media Queries for Footer */
 @media (max-width: 360px) {
   .upper-footer {
     flex-direction: column;
@@ -143,6 +226,12 @@ footer {
   }
   .social-icon {
     margin: 0;
+  }
+}
+
+@media (max-width: 810px) {
+  .lower-footer {
+    grid-template-columns: 1fr;
   }
 }
 </style>
