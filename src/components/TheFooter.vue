@@ -138,6 +138,9 @@ footer {
 .social-icon {
   margin-right: 20px;
 }
+.social-icon a svg:hover {
+  fill: var(--secondary);
+}
 
 /* Lower Footer */
 .lower-footer {
@@ -189,7 +192,9 @@ footer {
   border: 2px solid var(--secondary);
   border-radius: 4px;
   background-color: #020607;
+  color: var(--white);
   padding: 8px 62px 8px 12px;
+  font-weight: 400;
   font-size: 18px;
 }
 .newsletter-input:focus {
