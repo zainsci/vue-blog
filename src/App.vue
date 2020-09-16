@@ -43,6 +43,10 @@ export default {
   --text: #292929;
   --white: #ffffff;
   --black: #111;
+  --red: #ff4e51;
+  --yellow: #ffa500;
+  --green: #24b47e;
+  --purple: #442ebf;
 
   /* Animation Variables */
   --primary-trans: box-shadow 0.3s ease, transform 0.3s ease;
