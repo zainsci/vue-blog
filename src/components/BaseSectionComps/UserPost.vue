@@ -2,19 +2,23 @@
   <div class="post">
     <div class="post-thumb" v-for="post in Posts" :key="post.key">
       <div class="post-author">
-        <div class="author-img">
-          <img :src="post.authImg" :alt="post.authImgAlt" />
-        </div>
-        <div class="author-meta">
-          <div class="author-name">{{post.authorName}}</div>
-          <div class="submit-time">{{post.date}} · {{post.readTime}}</div>
-        </div>
+        <a href="#">
+          <div class="author-img">
+            <img :src="post.authImg" :alt="post.authImgAlt" />
+          </div>
+          <div class="author-meta">
+            <div class="author-name">{{post.authorName}}</div>
+            <div class="submit-time">{{post.date}} · {{post.readTime}}</div>
+          </div>
+        </a>
       </div>
       <div class="post-img">
         <img :src="post.postImg" :alt="post.postImgAlt" />
       </div>
       <div class="post-meta">
-        <div class="post-title">{{post.postTitle}}</div>
+        <div class="post-title">
+          <a href="#">{{post.postTitle}}</a>
+        </div>
       </div>
       <div class="post-feedback">
         <div class="like">
@@ -62,6 +66,10 @@ export default {
 </script>
 
 <style scoped>
+a {
+  text-decoration: none;
+  color: var(--text);
+}
 .post {
   width: 100%;
   height: 100%;
@@ -73,20 +81,22 @@ export default {
   display: flex;
   flex-direction: column;
   padding: 10px 20px;
-  border-radius: 10px;
   border: 1px solid #eee;
   margin-bottom: 30px;
-  transition: 0.15s ease-in;
+  transition: var(--primary-trans);
 }
 .post-thumb:hover {
   transform: translateY(-5px);
-  -webkit-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.25);
-  -moz-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.25);
-  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: var(--primary-box-shadow);
+  -moz-box-shadow: var(--primary-box-shadow);
+  box-shadow: var(--primary-box-shadow);
+}
+.post-thumb:hover a {
+  color: var(--primary);
 }
 
 /* Posts Author */
-.post-author {
+.post-author a {
   height: 80px;
   display: flex;
   padding: 10px;

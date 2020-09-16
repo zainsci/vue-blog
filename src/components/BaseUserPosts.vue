@@ -2,9 +2,7 @@
   <BaseContainer>
     <section>
       <div class="posts-column">
-        <a href="#">
-          <UserPost :Posts="posts" />
-        </a>
+        <UserPost :Posts="posts" />
       </div>
       <div class="popular-column"></div>
     </section>
