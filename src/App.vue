@@ -7,6 +7,7 @@
       bannerImg="https://images.unsplash.com/photo-1599904182194-d519a3268229?w=1229"
     />
     <FeaturedArticles />
+    <BaseUserPosts />
     <TheFooter />
   </div>
 </template>
@@ -16,6 +17,7 @@ import TheNavbar from "./components/TheNavbar.vue";
 import TheHeader from "./components/TheHeader.vue";
 import BaseAdBanner from "./components/BaseAdBanner.vue";
 import FeaturedArticles from "./components/FeaturedArticles.vue";
+import BaseUserPosts from "./components/BaseUserPosts.vue";
 import TheFooter from "./components/TheFooter.vue";
 
 export default {
@@ -25,6 +27,7 @@ export default {
     TheHeader,
     BaseAdBanner,
     FeaturedArticles,
+    BaseUserPosts,
     TheFooter,
   },
 };

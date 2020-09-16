@@ -26,7 +26,7 @@ export default {
       posts: [
         {
           key: 1,
-          authorName: "Zain Ansari",
+          authorName: "Socrates",
           date: "13 Sep",
           readTime: "5 Min",
           authImg:
@@ -40,7 +40,7 @@ export default {
         },
         {
           key: 2,
-          authorName: "Zain Ansari",
+          authorName: "Plato",
           date: "12 Sep",
           readTime: "10 Min",
           authImg:
@@ -54,7 +54,7 @@ export default {
         },
         {
           key: 3,
-          authorName: "Zain Ansari",
+          authorName: "Aristotle",
           date: "11 Sep",
           readTime: "15 Min",
           authImg:
@@ -68,7 +68,7 @@ export default {
         },
         {
           key: 4,
-          authorName: "Zain Ansari",
+          authorName: "Nietzsche",
           date: "10 Sep",
           readTime: "15 Min",
           authImg:
@@ -82,7 +82,7 @@ export default {
         },
         {
           key: 5,
-          authorName: "Zain Ansari",
+          authorName: "Schopenhaeur",
           date: "09 Sep",
           readTime: "20 Min",
           authImg:

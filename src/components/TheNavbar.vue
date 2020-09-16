@@ -3,7 +3,9 @@
     <BaseContainer>
       <div class="navbar">
         <div class="logo">
-          <span>B</span>log.
+          <a href="/">
+            <span>B</span>log.
+          </a>
         </div>
         <div class="nav-button" v-on:click="displayNavbar">
           <svg
@@ -23,7 +25,7 @@
         <nav class="navbar-nav">
           <ul>
             <li>
-              <a href="#">Home</a>
+              <a href="/">Home</a>
             </li>
             <li>
               <a href="#">Business</a>
@@ -100,7 +102,7 @@ a {
   text-transform: uppercase;
   color: var(--text);
 }
-.logo > span {
+.logo a > span {
   color: var(--primary);
 }
 
