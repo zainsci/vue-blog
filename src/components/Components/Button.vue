@@ -1,6 +1,6 @@
 <template>
   <div class="button">
-    <button :style="'background-color: ' + btnColor">{{btnText}}</button>
+    <button :style="'background-color: ' + btnColor">{{ btnText }}</button>
   </div>
 </template>
 
@@ -16,12 +16,20 @@ export default {
 
 <style scoped>
 .button button {
-  padding: 12px 18px;
+  padding: 8px 12px;
   border: var(--primary-border);
+  border-radius: 4px;
   background-color: var(--white);
   color: var(--text);
   font-size: 16px;
-  font-weight: 600;
   font-family: inherit;
+  appearance: none;
+}
+
+.button button:hover {
+  background-color: var(--primary);
+  color: var(--white);
+  border-color: var(--primary);
+  font-weight: 600;
 }
 </style>

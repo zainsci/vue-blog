@@ -79,5 +79,6 @@ img {
   font-weight: 400;
   font-family: "Merriweather Sans", sans-serif;
   color: var(--text);
+  line-height: 1.5;
 }
 </style>

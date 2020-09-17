@@ -2,7 +2,9 @@
   <div class="form-container">
     <div class="login-form">
       <form action="/">
+        <Label label="Email or Username" :for="'login-username'" />
         <Input type="text" name="login-username" id="login-username" />
+        <Label label="Password" :for="'login-password'" />
         <Input type="password" name="login-password" id="login-password" />
         <Button btnText="Submit" />
       </form>
@@ -11,6 +13,7 @@
 </template>
 
 <script>
+import Label from "./Forms/Label.vue";
 import Input from "./Forms/Input.vue";
 import Button from "./Components/Button.vue";
 
@@ -18,6 +21,7 @@ export default {
   name: "LoginForm",
   props: {},
   components: {
+    Label,
     Input,
     Button,
   },
