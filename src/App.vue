@@ -1,33 +1,36 @@
 <template>
   <div id="app">
     <TheNavbar />
-    <TheHeader />
+    <LoginForm />
+    <!-- <TheHeader />
     <BaseAdBanner
       bannerHeight="150px"
       bannerImg="https://images.unsplash.com/photo-1599904182194-d519a3268229?w=1229"
     />
     <FeaturedArticles />
-    <BaseUserPosts />
+    <BaseUserPosts />-->
     <TheFooter />
   </div>
 </template>
 
 <script>
 import TheNavbar from "./components/TheNavbar.vue";
-import TheHeader from "./components/TheHeader.vue";
-import BaseAdBanner from "./components/BaseAdBanner.vue";
-import FeaturedArticles from "./components/FeaturedArticles.vue";
-import BaseUserPosts from "./components/BaseUserPosts.vue";
+// import TheHeader from "./components/TheHeader.vue";
+// import BaseAdBanner from "./components/BaseAdBanner.vue";
+// import FeaturedArticles from "./components/FeaturedArticles.vue";
+// import BaseUserPosts from "./components/BaseUserPosts.vue";
 import TheFooter from "./components/TheFooter.vue";
+import LoginForm from "./components/LoginForm.vue";
 
 export default {
   name: "App",
   components: {
     TheNavbar,
-    TheHeader,
-    BaseAdBanner,
-    FeaturedArticles,
-    BaseUserPosts,
+    LoginForm,
+    // TheHeader,
+    // BaseAdBanner,
+    // FeaturedArticles,
+    // BaseUserPosts,
     TheFooter,
   },
 };
