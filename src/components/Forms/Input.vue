@@ -25,7 +25,7 @@ input {
   color: var(--text);
   background-color: var(--white);
   background-clip: padding-box;
-  border: 1px solid #eee;
+  border: var(--primary-border);
   appearance: none;
   border-radius: 4px;
   transition: var(--primary-trans);

@@ -54,6 +54,9 @@ export default {
   /* Animation Variables */
   --primary-trans: box-shadow 0.3s ease, transform 0.3s ease;
   --primary-box-shadow: 0 15px 45px -5px rgba(7, 10, 25, 0.25);
+
+  /* Border Variables */
+  --primary-border: 1px solid rgba(0, 0, 0, 0.2);
 }
 * {
   margin: 0;

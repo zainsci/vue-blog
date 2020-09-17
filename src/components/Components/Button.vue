@@ -1,6 +1,6 @@
 <template>
   <div class="button">
-    <button>{{btnText}}</button>
+    <button :style="'background-color: ' + btnColor">{{btnText}}</button>
   </div>
 </template>
 
@@ -9,6 +9,7 @@ export default {
   name: "Button",
   props: {
     btnText: String,
+    btnColor: String,
   },
 };
 </script>
@@ -16,7 +17,7 @@ export default {
 <style scoped>
 .button button {
   padding: 12px 18px;
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  border: var(--primary-border);
   background-color: var(--white);
   color: var(--text);
   font-size: 16px;
