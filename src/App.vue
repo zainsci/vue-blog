@@ -57,6 +57,7 @@ export default {
 
   /* Border Variables */
   --primary-border: 1px solid rgba(0, 0, 0, 0.2);
+  --primary-radius: 4px;
 }
 * {
   margin: 0;

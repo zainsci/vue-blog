@@ -18,7 +18,7 @@ export default {
 .button button {
   padding: 8px 12px;
   border: var(--primary-border);
-  border-radius: 4px;
+  border-radius: var(--primary-radius);
   background-color: var(--white);
   color: var(--text);
   font-size: 16px;

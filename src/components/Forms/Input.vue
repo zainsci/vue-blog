@@ -27,7 +27,7 @@ input {
   background-clip: padding-box;
   border: var(--primary-border);
   appearance: none;
-  border-radius: 4px;
+  border-radius: var(--primary-radius);
   transition: var(--primary-trans);
 }
 

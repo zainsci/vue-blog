@@ -42,5 +42,6 @@ export default {
   padding: 32px;
   background-color: var(--white);
   border: var(--primary-border);
+  border-radius: var(--primary-radius);
 }
 </style>

@@ -40,7 +40,7 @@
               <a href="#">Entertainment</a>
             </li>
           </ul>
-          <input type="search" name="search" id="header-search" placeholder="Search" />
+          <Input tyoe="search" name="search" id="header-search" :placeholder="'Search'" />
         </nav>
       </div>
     </BaseContainer>
@@ -49,10 +49,12 @@
 
 <script>
 import BaseContainer from "./BaseContainer.vue";
+import Input from "./Forms/Input.vue";
 export default {
   name: "TheNavbar",
   components: {
     BaseContainer,
+    Input,
   },
   props: {},
   data() {
@@ -130,15 +132,9 @@ nav ul li:hover {
 nav input {
   width: 180px;
   height: 40px;
-  border: 1px solid var(--secondary);
-  border-radius: 7px;
   padding: 8px 12px;
   margin-left: 20px;
-  transition: 0.1s;
-}
-nav input:focus {
-  outline: none;
-  border: 2px solid var(--secondary);
+  margin-bottom: 0;
 }
 
 /* Style For Button */
