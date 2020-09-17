@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <TheNavbar />
-    <LoginForm />
+    <SignUpForm />
     <!-- <TheHeader />
     <BaseAdBanner
       bannerHeight="150px"
@@ -20,13 +20,13 @@ import TheNavbar from "./components/TheNavbar.vue";
 // import FeaturedArticles from "./components/FeaturedArticles.vue";
 // import BaseUserPosts from "./components/BaseUserPosts.vue";
 import TheFooter from "./components/TheFooter.vue";
-import LoginForm from "./components/LoginForm.vue";
+import SignUpForm from "./components/SignUpForm.vue";
 
 export default {
   name: "App",
   components: {
     TheNavbar,
-    LoginForm,
+    SignUpForm,
     // TheHeader,
     // BaseAdBanner,
     // FeaturedArticles,

@@ -6,7 +6,7 @@
         <Input type="text" name="login-username" id="login-username" />
         <Label label="Password" :for="'login-password'" />
         <Input type="password" name="login-password" id="login-password" />
-        <Button btnText="Submit" />
+        <Button btnText="Log In" />
       </form>
     </div>
   </div>
