@@ -8,7 +8,7 @@
         <Input type="password" name="signup-password" id="signup-password" />
         <Label label="Confirm Password" :for="'confirm-password'" />
         <Input type="password" name="confirm-password" id="confirm-password" />
-        <Button btnText="Log In" />
+        <Button btnText="Sign Up" />
       </form>
     </div>
   </div>
