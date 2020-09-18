@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <TheNavbar />
-    <SignUpForm />
+    <TheNavbar @sign-up="showSignUp" />
+    <component :is="FormComp"></component>
     <!-- <TheHeader />
     <BaseAdBanner
       bannerHeight="150px"
@@ -32,6 +32,18 @@ export default {
     // FeaturedArticles,
     // BaseUserPosts,
     TheFooter,
+  },
+  data() {
+    return {
+      isForm: false,
+      FormComp: this.isForm ? "SignUpForm" : null,
+    };
+  },
+  methods: {
+    showSignUp() {
+      this.isForm = !this.isForm;
+      this.FormComp = this.isForm ? "SignUpForm" : null;
+    },
   },
 };
 </script>
