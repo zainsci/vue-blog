@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <TheNavbar @sign-up="showSignUp" />
+    <TheNavbar @sign-up="showSignUp" @log-in="showLogIn" />
     <component :is="FormComp"></component>
     <!-- <TheHeader />
     <BaseAdBanner
@@ -16,6 +16,7 @@
 <script>
 import TheNavbar from "./components/TheNavbar.vue";
 import SignUpForm from "./components/SignUpForm.vue";
+import LoginForm from "./components/LoginForm.vue";
 // import TheHeader from "./components/TheHeader.vue";
 // import BaseAdBanner from "./components/BaseAdBanner.vue";
 // import FeaturedArticles from "./components/FeaturedArticles.vue";
@@ -27,6 +28,7 @@ export default {
   components: {
     TheNavbar,
     SignUpForm,
+    LoginForm,
     // TheHeader,
     // BaseAdBanner,
     // FeaturedArticles,
@@ -43,6 +45,10 @@ export default {
     showSignUp() {
       this.isForm = !this.isForm;
       this.FormComp = this.isForm ? "SignUpForm" : null;
+    },
+    showLogIn() {
+      this.isForm = !this.isForm;
+      this.FormComp = this.isForm ? "LoginForm" : null;
     },
   },
 };

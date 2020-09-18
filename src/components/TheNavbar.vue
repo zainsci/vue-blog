@@ -32,7 +32,7 @@
               <a href="#">Notes</a>
             </li>
             <li>
-              <a href="#">Health</a>
+              <a v-on:click="$emit('log-in')">LogIn</a>
             </li>
             <li>
               <a v-on:click="$emit('sign-up')">SignUp</a>
