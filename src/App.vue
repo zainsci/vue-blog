@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <TheNavbar />
+    <SignUpForm />
     <!-- <TheHeader />
     <BaseAdBanner
       bannerHeight="150px"
@@ -14,6 +15,7 @@
 
 <script>
 import TheNavbar from "./components/TheNavbar.vue";
+import SignUpForm from "./components/SignUpForm.vue";
 // import TheHeader from "./components/TheHeader.vue";
 // import BaseAdBanner from "./components/BaseAdBanner.vue";
 // import FeaturedArticles from "./components/FeaturedArticles.vue";
@@ -24,6 +26,7 @@ export default {
   name: "App",
   components: {
     TheNavbar,
+    SignUpForm,
     // TheHeader,
     // BaseAdBanner,
     // FeaturedArticles,
