@@ -1,7 +1,7 @@
 <template>
   <div class="form-container">
     <div class="login-form">
-      <form action="/">
+      <form action="/" method="POST">
         <Label label="Email or Username" :for="'login-username'" />
         <Input type="text" name="login-username" id="login-username" />
         <Label label="Password" :for="'login-password'" />
