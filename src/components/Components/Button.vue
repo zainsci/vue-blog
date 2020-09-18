@@ -24,6 +24,7 @@ export default {
   font-size: 16px;
   font-family: inherit;
   appearance: none;
+  cursor: pointer;
 }
 
 .button button:hover {
