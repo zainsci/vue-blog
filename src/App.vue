@@ -1,24 +1,21 @@
 <template>
   <div id="app">
-    <TheNavbar @sign-up="showSignUp" @log-in="showLogIn" @all-post="showAllPost" />
-    <component :is="MainPage"></component>
-    <TheHeader />
-    <BaseAdBanner
-      bannerHeight="150px"
-      bannerImg="https://images.unsplash.com/photo-1599904182194-d519a3268229?w=1229"
+    <TheNavbar
+      @sign-up="showSignUp"
+      @log-in="showLogIn"
+      @all-post="showAllPost"
+      @home-page="showHomePage"
     />
-    <FeaturedArticles />
+    <component :is="MainPage"></component>
     <TheFooter />
   </div>
 </template>
 
 <script>
 import TheNavbar from "./components/TheNavbar.vue";
+import HomePage from "./components/HomePage.vue";
 import SignUpForm from "./components/SignUpForm.vue";
 import LoginForm from "./components/LoginForm.vue";
-import TheHeader from "./components/TheHeader.vue";
-import BaseAdBanner from "./components/BaseAdBanner.vue";
-import FeaturedArticles from "./components/FeaturedArticles.vue";
 import AllPosts from "./components/AllPosts.vue";
 import TheFooter from "./components/TheFooter.vue";
 
@@ -26,11 +23,9 @@ export default {
   name: "App",
   components: {
     TheNavbar,
+    HomePage,
     SignUpForm,
     LoginForm,
-    TheHeader,
-    BaseAdBanner,
-    FeaturedArticles,
     AllPosts,
     TheFooter,
   },
@@ -48,6 +43,9 @@ export default {
     },
     showAllPost() {
       this.MainPage = "AllPosts";
+    },
+    showHomePage() {
+      this.MainPage = "HomePage";
     },
   },
 };

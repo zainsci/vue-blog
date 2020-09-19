@@ -25,7 +25,7 @@
         <nav class="navbar-nav">
           <ul>
             <li>
-              <a href="/">Home</a>
+              <a v-on:click="$emit('home-page')">Home</a>
             </li>
             <li>
               <a v-on:click="$emit('all-post')">All Posts</a>
@@ -92,6 +92,7 @@ export default {
 a {
   text-decoration: none;
   color: var(--text);
+  cursor: pointer;
 }
 
 /* Styles For Logo */
