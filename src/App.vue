@@ -31,7 +31,7 @@ export default {
   },
   data() {
     return {
-      MainPage: null,
+      MainPage: "HomePage",
     };
   },
   methods: {
