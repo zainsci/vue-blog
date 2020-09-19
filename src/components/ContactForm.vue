@@ -1,14 +1,15 @@
 <template>
   <div class="form-container">
     <div class="signup-form">
+      <h1>Contact Us</h1>
       <form action="/" method="POST">
-        <Label label="Email or Username" :for="'signup-username'" />
-        <Input type="text" name="signup-username" id="signup-username" />
-        <Label label="Password" :for="'signup-password'" />
-        <Input type="password" name="signup-password" id="signup-password" />
-        <Label label="Confirm Password" :for="'confirm-password'" />
-        <Input type="password" name="confirm-password" id="confirm-password" />
-        <Button btnText="Sign Up" />
+        <Label label="Your Name (Required)" :for="'contact-name'" />
+        <Input type="text" name="contact-name" id="contact-name" />
+        <Label label="Your Email (Required)" :for="'contact-email'" />
+        <Input type="email" name="contact-email" id="contact-email" />
+        <Label label="Subject" :for="'contact-subject'" />
+        <Input type="text" name="contact-subject" id="contact-subject" />
+        <Button btnText="Send" />
       </form>
     </div>
   </div>
@@ -20,7 +21,7 @@ import Input from "./Forms/Input.vue";
 import Button from "./Components/Button.vue";
 
 export default {
-  name: "SignUpForm",
+  name: "ContactForm",
   props: {},
   components: {
     Label,
@@ -45,5 +46,8 @@ export default {
   background-color: var(--white);
   border: var(--primary-border);
   border-radius: var(--primary-radius);
+}
+.signup-form h1 {
+  margin-bottom: 20px;
 }
 </style>

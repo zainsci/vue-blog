@@ -34,7 +34,7 @@
               <a v-on:click="$emit('log-in')">LogIn</a>
             </li>
             <li>
-              <a v-on:click="$emit('sign-up')">SignUp</a>
+              <a v-on:click="$emit('contact')">Contact</a>
             </li>
           </ul>
           <Input tyoe="search" name="search" id="header-search" :placeholder="'Search'" />
