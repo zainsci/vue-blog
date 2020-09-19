@@ -1,6 +1,6 @@
 <template>
   <div class="form-container">
-    <div class="signup-form">
+    <div class="contact-form">
       <h1>Contact Us</h1>
       <form action="/" method="POST">
         <Label label="Your Name (Required)" :for="'contact-name'" />
@@ -9,6 +9,8 @@
         <Input type="email" name="contact-email" id="contact-email" />
         <Label label="Subject" :for="'contact-subject'" />
         <Input type="text" name="contact-subject" id="contact-subject" />
+        <Label label="Message" :for="'contact-message'" />
+        <TextArea name="contact-message" id="contact-message" />
         <Button btnText="Send" />
       </form>
     </div>
@@ -17,6 +19,7 @@
 
 <script>
 import Label from "./Forms/Label.vue";
+import TextArea from "./Forms/TextArea.vue";
 import Input from "./Forms/Input.vue";
 import Button from "./Components/Button.vue";
 
@@ -26,6 +29,7 @@ export default {
   components: {
     Label,
     Input,
+    TextArea,
     Button,
   },
 };
@@ -34,20 +38,21 @@ export default {
 <style scoped>
 .form-container {
   width: 100%;
-  height: calc(100vh - 70px);
+  height: 100%;
+  padding: 40px 0;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.signup-form {
+.contact-form {
   width: 100%;
-  max-width: 400px;
+  max-width: 700px;
   padding: 32px;
   background-color: var(--white);
   border: var(--primary-border);
   border-radius: var(--primary-radius);
 }
-.signup-form h1 {
+.contact-form h1 {
   margin-bottom: 20px;
 }
 </style>
