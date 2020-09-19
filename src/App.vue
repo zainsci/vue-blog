@@ -1,14 +1,13 @@
 <template>
   <div id="app">
-    <TheNavbar @sign-up="showSignUp" @log-in="showLogIn" />
-    <component :is="FormComp"></component>
-    <!-- <TheHeader />
+    <TheNavbar @sign-up="showSignUp" @log-in="showLogIn" @all-post="showAllPost" />
+    <component :is="MainPage"></component>
+    <TheHeader />
     <BaseAdBanner
       bannerHeight="150px"
       bannerImg="https://images.unsplash.com/photo-1599904182194-d519a3268229?w=1229"
     />
     <FeaturedArticles />
-    <BaseUserPosts />-->
     <TheFooter />
   </div>
 </template>
@@ -17,10 +16,10 @@
 import TheNavbar from "./components/TheNavbar.vue";
 import SignUpForm from "./components/SignUpForm.vue";
 import LoginForm from "./components/LoginForm.vue";
-// import TheHeader from "./components/TheHeader.vue";
-// import BaseAdBanner from "./components/BaseAdBanner.vue";
-// import FeaturedArticles from "./components/FeaturedArticles.vue";
-// import BaseUserPosts from "./components/BaseUserPosts.vue";
+import TheHeader from "./components/TheHeader.vue";
+import BaseAdBanner from "./components/BaseAdBanner.vue";
+import FeaturedArticles from "./components/FeaturedArticles.vue";
+import AllPosts from "./components/AllPosts.vue";
 import TheFooter from "./components/TheFooter.vue";
 
 export default {
@@ -29,26 +28,26 @@ export default {
     TheNavbar,
     SignUpForm,
     LoginForm,
-    // TheHeader,
-    // BaseAdBanner,
-    // FeaturedArticles,
-    // BaseUserPosts,
+    TheHeader,
+    BaseAdBanner,
+    FeaturedArticles,
+    AllPosts,
     TheFooter,
   },
   data() {
     return {
-      isForm: false,
-      FormComp: this.isForm ? "SignUpForm" : null,
+      MainPage: null,
     };
   },
   methods: {
     showSignUp() {
-      this.isForm = !this.isForm;
-      this.FormComp = this.isForm ? "SignUpForm" : null;
+      this.MainPage = "SignUpForm";
     },
     showLogIn() {
-      this.isForm = !this.isForm;
-      this.FormComp = this.isForm ? "LoginForm" : null;
+      this.MainPage = "LoginForm";
+    },
+    showAllPost() {
+      this.MainPage = "AllPosts";
     },
   },
 };
