@@ -17,9 +17,9 @@
 </template>
 
 <script>
-import BaseContainer from "./BaseContainer.vue";
+import BaseContainer from "../BaseContainer.vue";
 export default {
-  name: "BaseAdBanner",
+  name: "AdBanner",
   components: { BaseContainer },
   props: {
     bannerHeight: Number,

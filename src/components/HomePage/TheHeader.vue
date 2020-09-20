@@ -34,8 +34,8 @@
 </template>
 
 <script>
-import BaseContainer from "./BaseContainer.vue";
-import TheHeaderPopPost from "./TheHeaderComps/TheHeaderPopPost.vue";
+import BaseContainer from "../BaseContainer.vue";
+import TheHeaderPopPost from "../TheHeaderComps/TheHeaderPopPost.vue";
 
 export default {
   name: "TheHeader",

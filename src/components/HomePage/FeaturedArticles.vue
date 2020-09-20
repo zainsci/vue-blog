@@ -14,9 +14,9 @@
 </template>
 
 <script>
-import BaseContainer from "./BaseContainer.vue";
-import FeaturePost from "./FeaturedComps/FeaturePost.vue";
-import LatestPosts from "./FeaturedComps/LatestPosts.vue";
+import BaseContainer from "../BaseContainer.vue";
+import FeaturePost from "../FeaturedComps/FeaturePost.vue";
+import LatestPosts from "../FeaturedComps/LatestPosts.vue";
 
 export default {
   name: "FeaturedArticles",

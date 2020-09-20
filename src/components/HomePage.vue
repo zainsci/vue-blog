@@ -1,7 +1,7 @@
 <template>
   <main>
     <TheHeader />
-    <BaseAdBanner
+    <AdBanner
       bannerHeight="150px"
       bannerImg="https://images.unsplash.com/photo-1599904182194-d519a3268229?w=1229"
     />
@@ -10,16 +10,16 @@
 </template>
 
 <script>
-import TheHeader from "./TheHeader.vue";
-import BaseAdBanner from "./BaseAdBanner.vue";
-import FeaturedArticles from "./FeaturedArticles.vue";
+import TheHeader from "./HomePage/TheHeader.vue";
+import AdBanner from "./HomePage/AdBanner.vue";
+import FeaturedArticles from "./HomePage/FeaturedArticles.vue";
 
 export default {
   name: "HomePage",
   props: {},
   components: {
     TheHeader,
-    BaseAdBanner,
+    AdBanner,
     FeaturedArticles,
   },
 };
