@@ -17,7 +17,7 @@
 </template>
 
 <script>
-import BaseContainer from "../BaseContainer.vue";
+import BaseContainer from "../Utils/BaseContainer.vue";
 export default {
   name: "AdBanner",
   components: { BaseContainer },

@@ -10,7 +10,7 @@
 </template>
 
 <script>
-import BaseContainer from "./BaseContainer.vue";
+import BaseContainer from "./Utils/BaseContainer.vue";
 import UserPost from "./BaseSectionComps/UserPost.vue";
 
 export default {

@@ -45,7 +45,7 @@
 </template>
 
 <script>
-import BaseContainer from "./BaseContainer.vue";
+import BaseContainer from "./Utils/BaseContainer.vue";
 import Input from "./Forms/Input.vue";
 export default {
   name: "TheNavbar",
