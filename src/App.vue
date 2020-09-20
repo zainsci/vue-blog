@@ -1,10 +1,10 @@
 <template>
   <div id="app">
     <TheNavbar
+      @home-page="showHomePage"
+      @all-post="showAllPost"
       @contact="showContact"
       @log-in="showLogIn"
-      @all-post="showAllPost"
-      @home-page="showHomePage"
     />
     <component :is="MainPage"></component>
     <TheFooter />
@@ -14,9 +14,9 @@
 <script>
 import TheNavbar from "./components/TheNavbar.vue";
 import HomePage from "./components/HomePage.vue";
+import AllPosts from "./components/AllPosts.vue";
 import ContactForm from "./components/ContactForm.vue";
 import LoginForm from "./components/LoginForm.vue";
-import AllPosts from "./components/AllPosts.vue";
 import TheFooter from "./components/TheFooter.vue";
 
 export default {
@@ -24,9 +24,9 @@ export default {
   components: {
     TheNavbar,
     HomePage,
+    AllPosts,
     ContactForm,
     LoginForm,
-    AllPosts,
     TheFooter,
   },
   data() {
