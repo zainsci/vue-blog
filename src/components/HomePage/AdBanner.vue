@@ -1,5 +1,5 @@
 <template>
-  <BaseContainer>
+  <Container>
     <a href="#">
       <div class="banner">
         <div
@@ -13,14 +13,14 @@
         </div>
       </div>
     </a>
-  </BaseContainer>
+  </Container>
 </template>
 
 <script>
-import BaseContainer from "../Utils/BaseContainer.vue";
+import Container from "../Utils/Container.vue";
 export default {
   name: "AdBanner",
-  components: { BaseContainer },
+  components: { Container },
   props: {
     bannerHeight: Number,
     bannerImg: String,

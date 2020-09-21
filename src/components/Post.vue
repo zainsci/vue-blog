@@ -1,5 +1,5 @@
 <template>
-  <BaseContainer>
+  <Container>
     <div class="post">
       <div class="post-image">
         <img :src="postHeaderImg" alt="Image" />
@@ -62,16 +62,16 @@
         </div>
       </footer>
     </div>
-  </BaseContainer>
+  </Container>
 </template>
 
 <script>
-import BaseContainer from "./Utils/BaseContainer.vue";
+import Container from "./Utils/Container.vue";
 
 export default {
   name: "Header",
   components: {
-    BaseContainer,
+    Container,
   },
   props: { postHeaderImg: String, authorImg: String },
 };

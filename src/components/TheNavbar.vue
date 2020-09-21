@@ -1,6 +1,6 @@
 <template>
   <div class="navigation">
-    <BaseContainer>
+    <Container>
       <div class="navbar">
         <div class="logo">
           <a href="/">
@@ -37,17 +37,17 @@
           <Input tyoe="search" name="search" id="header-search" :placeholder="'Search'" />
         </nav>
       </div>
-    </BaseContainer>
+    </Container>
   </div>
 </template>
 
 <script>
-import BaseContainer from "./Utils/BaseContainer.vue";
+import Container from "./Utils/Container.vue";
 import Input from "./Forms/Input.vue";
 export default {
   name: "TheNavbar",
   components: {
-    BaseContainer,
+    Container,
     Input,
   },
   props: {},

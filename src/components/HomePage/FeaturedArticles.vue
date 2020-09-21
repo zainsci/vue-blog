@@ -1,6 +1,6 @@
 <template>
   <section>
-    <BaseContainer>
+    <Container>
       <div class="jumbotron">
         <div class="featured">
           <div v-for="feature in features" :key="feature.key">
@@ -9,18 +9,18 @@
         </div>
         <LatestPosts :latest="latest" />
       </div>
-    </BaseContainer>
+    </Container>
   </section>
 </template>
 
 <script>
-import BaseContainer from "../Utils/BaseContainer.vue";
+import Container from "../Utils/Container.vue";
 import FeaturePost from "../FeaturedComps/FeaturePost.vue";
 import LatestPosts from "../FeaturedComps/LatestPosts.vue";
 
 export default {
   name: "FeaturedArticles",
-  components: { BaseContainer, FeaturePost, LatestPosts },
+  components: { Container, FeaturePost, LatestPosts },
   props: {},
   data() {
     return {

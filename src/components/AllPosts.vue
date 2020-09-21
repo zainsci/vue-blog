@@ -1,22 +1,22 @@
 <template>
-  <BaseContainer>
+  <Container>
     <section>
       <div class="posts-column">
         <UserPost :Posts="posts" />
       </div>
       <div class="popular-column"></div>
     </section>
-  </BaseContainer>
+  </Container>
 </template>
 
 <script>
-import BaseContainer from "./Utils/BaseContainer.vue";
+import Container from "./Utils/Container.vue";
 import UserPost from "./BaseSectionComps/UserPost.vue";
 
 export default {
   name: "BaseUserPosts",
   components: {
-    BaseContainer,
+    Container,
     UserPost,
   },
   data() {

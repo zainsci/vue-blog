@@ -6,7 +6,7 @@
 
 <script>
 export default {
-  name: "BaseContainer"
+  name: "Container",
 };
 </script>
 

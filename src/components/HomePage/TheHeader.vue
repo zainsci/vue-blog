@@ -1,5 +1,5 @@
 <template>
-  <BaseContainer>
+  <Container>
     <header>
       <div
         class="latest-post"
@@ -30,17 +30,17 @@
         />
       </div>
     </header>
-  </BaseContainer>
+  </Container>
 </template>
 
 <script>
-import BaseContainer from "../Utils/BaseContainer.vue";
+import Container from "../Utils/Container.vue";
 import TheHeaderPopPost from "../TheHeaderComps/TheHeaderPopPost.vue";
 
 export default {
   name: "TheHeader",
   components: {
-    BaseContainer,
+    Container,
     TheHeaderPopPost,
   },
   props: {},

@@ -1,6 +1,6 @@
 <template>
   <footer>
-    <BaseContainer>
+    <Container>
       <div class="upper-footer">
         <div class="logo">
           <span>B</span>LOG.
@@ -81,15 +81,15 @@
           </form>
         </div>
       </div>
-    </BaseContainer>
+    </Container>
   </footer>
 </template>
 
 <script>
-import BaseContainer from "./Utils/BaseContainer.vue";
+import Container from "./Utils/Container.vue";
 export default {
   name: "TheFooter",
-  components: { BaseContainer },
+  components: { Container },
   props: {},
 };
 </script>
