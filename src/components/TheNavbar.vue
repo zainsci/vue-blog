@@ -31,9 +31,6 @@
               <a v-on:click="$emit('all-post')">All Posts</a>
             </li>
             <li>
-              <a v-on:click="$emit('log-in')">LogIn</a>
-            </li>
-            <li>
               <a v-on:click="$emit('contact')">Contact</a>
             </li>
           </ul>
