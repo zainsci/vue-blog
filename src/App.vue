@@ -2,6 +2,7 @@
   <div id="app">
     <TheNavbar @home-page="showHomePage" @all-post="showAllPost" @contact="showContact" />
     <component :is="MainPage"></component>
+    <TagCloud />
     <TheFooter />
   </div>
 </template>
@@ -11,6 +12,7 @@ import TheNavbar from "./components/TheNavbar.vue";
 import HomePage from "./components/HomePage.vue";
 import AllPosts from "./components/AllPosts.vue";
 import ContactForm from "./components/ContactForm.vue";
+import TagCloud from "./components/TagCloud.vue";
 import TheFooter from "./components/TheFooter.vue";
 
 export default {
@@ -20,6 +22,7 @@ export default {
     HomePage,
     AllPosts,
     ContactForm,
+    TagCloud,
     TheFooter,
   },
   data() {

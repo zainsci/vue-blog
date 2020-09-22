@@ -73,13 +73,19 @@ export default {
   flex-wrap: wrap;
 }
 .tags ul li {
-  width: fit-content;
-  padding: 8px 12px;
-  border: 1px solid var(--secondary);
-  border-radius: 8px;
+  margin: 0 0 20px 10px;
 }
 .tags ul li a {
-  color: var(--text);
+  width: fit-content;
   text-decoration: none;
+  padding: 8px 12px;
+  border: 1px solid var(--secondary);
+  border-radius: 20px;
+  color: var(--text);
+}
+.tags ul li a:hover {
+  color: var(--white) !important;
+  background-color: var(--secondary);
+  font-weight: 600;
 }
 </style>
