@@ -60,4 +60,26 @@ export default {
 </script>
 
 <style scoped>
+.tags {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tags ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+.tags ul li {
+  width: fit-content;
+  padding: 8px 12px;
+  border: 1px solid var(--secondary);
+  border-radius: 8px;
+}
+.tags ul li a {
+  color: var(--text);
+  text-decoration: none;
+}
 </style>
