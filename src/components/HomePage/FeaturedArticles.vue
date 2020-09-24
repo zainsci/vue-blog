@@ -1,15 +1,15 @@
 <template>
   <section>
-    <Container>
+    <container>
       <div class="jumbotron">
         <div class="featured">
           <div v-for="feature in features" :key="feature.key">
-            <FeaturePost :feature="feature" />
+            <feature-post :feature="feature" />
           </div>
         </div>
-        <LatestPosts :latest="latest" />
+        <latest-posts :latest="latest" />
       </div>
-    </Container>
+    </container>
   </section>
 </template>
 

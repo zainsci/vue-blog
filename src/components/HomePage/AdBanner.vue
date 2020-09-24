@@ -1,5 +1,5 @@
 <template>
-  <Container>
+  <container>
     <a href="#">
       <div class="banner">
         <div
@@ -20,7 +20,7 @@
         </div>
       </div>
     </a>
-  </Container>
+  </container>
 </template>
 
 <script>

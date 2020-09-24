@@ -1,5 +1,5 @@
 <template>
-  <Container>
+  <container>
     <div class="post">
       <div class="post-image">
         <img :src="postHeaderImg" alt="Image" />
@@ -186,7 +186,7 @@
         </div>
       </footer>
     </div>
-  </Container>
+  </container>
 </template>
 
 <script>

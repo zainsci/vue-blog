@@ -1,6 +1,6 @@
 <template>
   <div class="navigation">
-    <Container>
+    <container>
       <div class="navbar">
         <div class="logo">
           <a href="/"> <span>B</span>log. </a>
@@ -40,7 +40,7 @@
           />
         </nav>
       </div>
-    </Container>
+    </container>
   </div>
 </template>
 

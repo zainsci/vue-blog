@@ -1,6 +1,6 @@
 <template>
   <footer>
-    <Container>
+    <container>
       <div class="upper-footer">
         <div class="logo"><span>B</span>LOG.</div>
         <ul class="social-icons">
@@ -84,7 +84,7 @@
           </form>
         </div>
       </div>
-    </Container>
+    </container>
   </footer>
 </template>
 

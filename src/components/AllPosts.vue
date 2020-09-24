@@ -1,12 +1,12 @@
 <template>
-  <Container>
+  <container>
     <section>
       <div class="posts-column">
         <UserPost :Posts="posts" />
       </div>
       <div class="popular-column"></div>
     </section>
-  </Container>
+  </container>
 </template>
 
 <script>

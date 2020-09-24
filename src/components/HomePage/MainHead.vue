@@ -1,5 +1,5 @@
 <template>
-  <Container>
+  <container>
     <header>
       <div
         class="latest-post"
@@ -15,35 +15,35 @@
         </a>
       </div>
       <div class="popular-posts">
-        <TheHeaderPopPost
+        <headline-post
           heading="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam
               recusandae!"
           imgSrc="https://images.unsplash.com/photo-1599694486513-ba57db87925b?w=750"
         />
-        <TheHeaderPopPost
+        <headline-post
           heading="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam
               recusandae!"
           imgSrc="https://images.unsplash.com/photo-1599734699867-92dd706c8c64?w=750"
         />
-        <TheHeaderPopPost
+        <headline-post
           heading="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam
               recusandae!"
           imgSrc="https://images.unsplash.com/photo-1599661046827-dacff0c0f09a?w=750"
         />
       </div>
     </header>
-  </Container>
+  </container>
 </template>
 
 <script>
 import Container from "../Utils/Container.vue";
-import TheHeaderPopPost from "../TheHeaderComps/TheHeaderPopPost.vue";
+import HeadlinePost from "../TheHeaderComps/HeadlinePost.vue";
 
 export default {
   name: "main-head",
   components: {
     Container,
-    TheHeaderPopPost,
+    HeadlinePost,
   },
   props: {},
 };

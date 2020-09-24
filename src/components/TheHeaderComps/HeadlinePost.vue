@@ -8,7 +8,7 @@
 
 <script>
 export default {
-  name: "headlines-posts",
+  name: "headline-post",
   props: {
     heading: String,
     imgSrc: String,

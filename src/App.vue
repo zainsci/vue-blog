@@ -1,33 +1,33 @@
 <template>
   <div id="app">
-    <TheNavbar
+    <main-navbar
       @home-page="showHomePage"
       @all-post="showAllPost"
       @contact="showContact"
     />
     <component :is="MainPage"></component>
-    <TagCloud />
-    <TheFooter />
+    <tag-cloud />
+    <main-footer />
   </div>
 </template>
 
 <script>
-import TheNavbar from "./components/TheNavbar.vue";
+import MainNavbar from "./components/MainNavbar.vue";
 import HomePage from "./components/HomePage.vue";
 import AllPosts from "./components/AllPosts.vue";
 import ContactForm from "./components/ContactForm.vue";
 import TagCloud from "./components/TagCloud.vue";
-import TheFooter from "./components/TheFooter.vue";
+import MainFooter from "./components/MainFooter.vue";
 
 export default {
   name: "App",
   components: {
-    TheNavbar,
+    MainNavbar,
     HomePage,
     AllPosts,
     ContactForm,
     TagCloud,
-    TheFooter,
+    MainFooter,
   },
   data() {
     return {

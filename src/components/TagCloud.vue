@@ -1,5 +1,5 @@
 <template>
-  <Container>
+  <container>
     <div class="tags">
       <ul>
         <li>
@@ -52,7 +52,7 @@
         </li>
       </ul>
     </div>
-  </Container>
+  </container>
 </template>
 
 <script>
