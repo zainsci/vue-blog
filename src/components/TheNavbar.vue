@@ -3,9 +3,7 @@
     <Container>
       <div class="navbar">
         <div class="logo">
-          <a href="/">
-            <span>B</span>log.
-          </a>
+          <a href="/"> <span>B</span>log. </a>
         </div>
         <div class="nav-button" v-on:click="displayNavbar">
           <svg
@@ -25,16 +23,21 @@
         <nav class="navbar-nav">
           <ul>
             <li>
-              <a v-on:click="$emit('home-page')">Home</a>
+              <a href="#home" v-on:click="$emit('home-page')">Home</a>
             </li>
             <li>
-              <a v-on:click="$emit('all-post')">All Posts</a>
+              <a href="#all-posts" v-on:click="$emit('all-post')">All Posts</a>
             </li>
             <li>
-              <a v-on:click="$emit('contact')">Contact</a>
+              <a href="#contact" v-on:click="$emit('contact')">Contact</a>
             </li>
           </ul>
-          <Input tyoe="search" name="search" id="header-search" :placeholder="'Search'" />
+          <Input
+            tyoe="search"
+            name="search"
+            id="header-search"
+            :placeholder="'Search'"
+          />
         </nav>
       </div>
     </Container>

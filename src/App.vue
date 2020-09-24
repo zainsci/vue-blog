@@ -1,6 +1,10 @@
 <template>
   <div id="app">
-    <TheNavbar @home-page="showHomePage" @all-post="showAllPost" @contact="showContact" />
+    <TheNavbar
+      @home-page="showHomePage"
+      @all-post="showAllPost"
+      @contact="showContact"
+    />
     <component :is="MainPage"></component>
     <TagCloud />
     <TheFooter />
