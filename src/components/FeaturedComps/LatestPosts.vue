@@ -7,13 +7,13 @@
     <ul>
       <li v-for="every in latest" :key="every.key">
         <div class="latest-title">
-          <a href="#">{{every.title}}</a>
+          <a href="#">{{ every.title }}</a>
         </div>
         <div class="latest-meta">
           <a href="#">
-            <span class="latest-meta-name">{{every.author}}</span>
+            <span class="latest-meta-name">{{ every.author }}</span>
           </a>
-          <span class="latest-meta-time">{{every.date}}</span>
+          <span class="latest-meta-time">{{ every.date }}</span>
         </div>
       </li>
     </ul>
@@ -22,7 +22,7 @@
 
 <script>
 export default {
-  name: "LatestPosts",
+  name: "latest-posts",
   props: { latest: Array },
 };
 </script>

@@ -2,9 +2,7 @@
   <footer>
     <Container>
       <div class="upper-footer">
-        <div class="logo">
-          <span>B</span>LOG.
-        </div>
+        <div class="logo"><span>B</span>LOG.</div>
         <ul class="social-icons">
           <li class="social-icon">
             <a href="https://www.facebook.com">
@@ -60,7 +58,12 @@
       <div class="lower-footer">
         <div class="our-story">
           <h4>Our Story</h4>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos iste eius dolorem dolores itaque perferendis provident nemo facilis. Corporis asperiores repudiandae error reiciendis modi, architecto sint natus eius ullam distinctio.</p>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Dignissimos iste eius dolorem dolores itaque perferendis provident
+            nemo facilis. Corporis asperiores repudiandae error reiciendis modi,
+            architecto sint natus eius ullam distinctio.
+          </p>
         </div>
         <ul class="nav-links">
           <li>
@@ -88,7 +91,7 @@
 <script>
 import Container from "./Utils/Container.vue";
 export default {
-  name: "TheFooter",
+  name: "main-footer",
   components: { Container },
   props: {},
 };

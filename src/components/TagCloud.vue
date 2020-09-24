@@ -58,7 +58,7 @@
 <script>
 import Container from "./Utils/Container.vue";
 export default {
-  name: "TagCloud",
+  name: "tag-cloud",
   components: {
     Container,
   },

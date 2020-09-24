@@ -7,8 +7,8 @@
             <img :src="post.authImg" :alt="post.authImgAlt" />
           </div>
           <div class="author-meta">
-            <div class="author-name">{{post.authorName}}</div>
-            <div class="submit-time">{{post.date}} · {{post.readTime}}</div>
+            <div class="author-name">{{ post.authorName }}</div>
+            <div class="submit-time">{{ post.date }} · {{ post.readTime }}</div>
           </div>
         </a>
       </div>
@@ -17,7 +17,7 @@
       </div>
       <div class="post-meta">
         <div class="post-title">
-          <a href="#">{{post.postTitle}}</a>
+          <a href="#">{{ post.postTitle }}</a>
         </div>
       </div>
       <div class="post-feedback">
@@ -58,7 +58,7 @@
 
 <script>
 export default {
-  name: "SectionPostThumb",
+  name: "user-post",
   props: {
     Posts: Array,
   },

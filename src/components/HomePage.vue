@@ -15,7 +15,7 @@ import AdBanner from "./HomePage/AdBanner.vue";
 import FeaturedArticles from "./HomePage/FeaturedArticles.vue";
 
 export default {
-  name: "HomePage",
+  name: "home-page",
   props: {},
   components: {
     TheHeader,

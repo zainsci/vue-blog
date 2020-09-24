@@ -18,7 +18,7 @@ import Input from "./Forms/Input.vue";
 import Button from "./Components/Button.vue";
 
 export default {
-  name: "LoginForm",
+  name: "login-form",
   props: {},
   components: {
     Label,

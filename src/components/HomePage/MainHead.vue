@@ -3,12 +3,14 @@
     <header>
       <div
         class="latest-post"
-        style="background-image: url('https://images.unsplash.com/photo-1551717309-88444dbe54f5?w=1050')"
+        style="
+          background-image: url('https://images.unsplash.com/photo-1551717309-88444dbe54f5?w=1050');
+        "
       >
         <a href="#">
           <h1>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto,
-            ut porro aut asperiores temporibus in!
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Architecto, ut porro aut asperiores temporibus in!
           </h1>
         </a>
       </div>
@@ -38,7 +40,7 @@ import Container from "../Utils/Container.vue";
 import TheHeaderPopPost from "../TheHeaderComps/TheHeaderPopPost.vue";
 
 export default {
-  name: "TheHeader",
+  name: "main-head",
   components: {
     Container,
     TheHeaderPopPost,

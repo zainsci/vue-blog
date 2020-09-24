@@ -14,7 +14,7 @@ import Container from "./Utils/Container.vue";
 import UserPost from "./BaseSectionComps/UserPost.vue";
 
 export default {
-  name: "BaseUserPosts",
+  name: "all-posts",
   components: {
     Container,
     UserPost,

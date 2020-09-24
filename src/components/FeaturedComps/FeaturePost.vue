@@ -1,19 +1,19 @@
 <template>
   <div class="feature-post">
     <div class="feature-title">
-      <a href="#">{{feature.title}}</a>
+      <a href="#">{{ feature.title }}</a>
     </div>
     <div class="feature-auth">
       <span>
-        <a href="#">{{feature.author}}</a>
+        <a href="#">{{ feature.author }}</a>
       </span>
-      · {{feature.date}}
+      · {{ feature.date }}
     </div>
     <div class="feature-img">
       <img :src="feature.imgSrc" :alt="feature.imgAlt" />
     </div>
     <div class="feature-content">
-      <p>{{feature.content}}...</p>
+      <p>{{ feature.content }}...</p>
       <a href="#">Read More</a>
     </div>
   </div>
@@ -21,7 +21,7 @@
 
 <script>
 export default {
-  name: "FeaturePost",
+  name: "feature-post",
   props: {
     feature: Object,
   },

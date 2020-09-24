@@ -1,14 +1,14 @@
 <template>
-  <div class="popular" :style="'background-image: url('+ imgSrc +')'">
+  <div class="popular" :style="'background-image: url(' + imgSrc + ')'">
     <a href="#">
-      <h4>{{heading}}</h4>
+      <h4>{{ heading }}</h4>
     </a>
   </div>
 </template>
 
 <script>
 export default {
-  name: "TheHeaderPopPost",
+  name: "headlines-posts",
   props: {
     heading: String,
     imgSrc: String,

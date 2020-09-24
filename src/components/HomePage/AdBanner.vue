@@ -4,12 +4,19 @@
       <div class="banner">
         <div
           class="banner-image"
-          :style="'height:'+bannerHeight+';background-image:url('+bannerImg+')'"
+          :style="
+            'height:' +
+            bannerHeight +
+            ';background-image:url(' +
+            bannerImg +
+            ')'
+          "
         >
           <div class="base-banner-title">Lorem ipsum dolor sit amet</div>
-          <div
-            class="base-banner-content"
-          >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis reiciendis,</div>
+          <div class="base-banner-content">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis
+            reiciendis,
+          </div>
         </div>
       </div>
     </a>
@@ -19,7 +26,7 @@
 <script>
 import Container from "../Utils/Container.vue";
 export default {
-  name: "AdBanner",
+  name: "ad-banner",
   components: { Container },
   props: {
     bannerHeight: Number,

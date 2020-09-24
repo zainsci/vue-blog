@@ -24,7 +24,7 @@ import Input from "./Forms/Input.vue";
 import Button from "./Components/Button.vue";
 
 export default {
-  name: "ContactForm",
+  name: "contact-form",
   props: {},
   components: {
     Label,

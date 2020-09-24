@@ -48,7 +48,7 @@
 import Container from "./Utils/Container.vue";
 import Input from "./Forms/Input.vue";
 export default {
-  name: "TheNavbar",
+  name: "main-navbar",
   components: {
     Container,
     Input,

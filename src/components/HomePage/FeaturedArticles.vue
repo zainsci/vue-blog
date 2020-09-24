@@ -19,7 +19,7 @@ import FeaturePost from "../FeaturedComps/FeaturePost.vue";
 import LatestPosts from "../FeaturedComps/LatestPosts.vue";
 
 export default {
-  name: "FeaturedArticles",
+  name: "featured-articles",
   components: { Container, FeaturePost, LatestPosts },
   props: {},
   data() {
