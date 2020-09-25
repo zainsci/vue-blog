@@ -5,9 +5,9 @@
       Miss
     </header>
     <ul>
-      <li v-for="every in latest" :key="every.key">
+      <li v-for="every in latest" :key="every.id">
         <div class="latest-title">
-          <a href="#">{{ every.title }}</a>
+          <router-link :to="'/post/' + every.id">{{ every.title }}</router-link>
         </div>
         <div class="latest-meta">
           <a href="#">

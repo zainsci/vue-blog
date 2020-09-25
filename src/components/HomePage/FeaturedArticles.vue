@@ -3,7 +3,7 @@
     <container>
       <div class="jumbotron">
         <div class="featured">
-          <div v-for="feature in features" :key="feature.key">
+          <div v-for="feature in features" :key="feature.id">
             <feature-post :feature="feature" />
           </div>
         </div>
@@ -26,7 +26,7 @@ export default {
     return {
       features: [
         {
-          key: 0,
+          id: 0,
           title: "Lorem ipsum dolor sit amet consectetur adipisicing.",
           author: "Aristotle",
           date: "Sep 14, 2020",
@@ -37,7 +37,7 @@ export default {
             "Lorem ipsum dolor sit amet consectetur adipisicing. Lorem ipsum dolor sit amet consectetur adipisicing.",
         },
         {
-          key: 1,
+          id: 1,
           title: "Lorem ipsum dolor sit amet consectetur adipisicing.",
           author: "Aristotle",
           date: "Sep 14, 2020",
@@ -48,7 +48,7 @@ export default {
             "Lorem ipsum dolor sit amet consectetur adipisicing. Lorem ipsum dolor sit amet consectetur adipisicing.",
         },
         {
-          key: 2,
+          id: 2,
           title: "Lorem ipsum dolor sit amet consectetur adipisicing.",
           author: "Aristotle",
           date: "Sep 14, 2020",
@@ -59,7 +59,7 @@ export default {
             "Lorem ipsum dolor sit amet consectetur adipisicing. Lorem ipsum dolor sit amet consectetur adipisicing.",
         },
         {
-          key: 3,
+          id: 3,
           title: "Lorem ipsum dolor sit amet consectetur adipisicing.",
           author: "Aristotle",
           date: "Sep 14, 2020",
@@ -72,61 +72,61 @@ export default {
       ],
       latest: [
         {
-          key: 0,
+          id: 0,
           title: "Lorem ipsum dolor sit amet consectetur adipisicing.",
           author: "Socrates",
           date: "Sep 14, 2020",
         },
         {
-          key: 1,
+          id: 1,
           title: "Lorem ipsum dolor sit amet consectetur adipisicing.",
           author: "Socrates",
           date: "Sep 14, 2020",
         },
         {
-          key: 2,
+          id: 2,
           title: "Lorem ipsum dolor sit amet consectetur adipisicing.",
           author: "Socrates",
           date: "Sep 14, 2020",
         },
         {
-          key: 3,
+          id: 3,
           title: "Lorem ipsum dolor sit amet consectetur adipisicing.",
           author: "Socrates",
           date: "Sep 14, 2020",
         },
         {
-          key: 4,
+          id: 4,
           title: "Lorem ipsum dolor sit amet consectetur adipisicing.",
           author: "Socrates",
           date: "Sep 14, 2020",
         },
         {
-          key: 5,
+          id: 5,
           title: "Lorem ipsum dolor sit amet consectetur adipisicing.",
           author: "Socrates",
           date: "Sep 14, 2020",
         },
         {
-          key: 6,
+          id: 6,
           title: "Lorem ipsum dolor sit amet consectetur adipisicing.",
           author: "Socrates",
           date: "Sep 14, 2020",
         },
         {
-          key: 7,
+          id: 7,
           title: "Lorem ipsum dolor sit amet consectetur adipisicing.",
           author: "Socrates",
           date: "Sep 14, 2020",
         },
         {
-          key: 8,
+          id: 8,
           title: "Lorem ipsum dolor sit amet consectetur adipisicing.",
           author: "Socrates",
           date: "Sep 14, 2020",
         },
         {
-          key: 9,
+          id: 9,
           title: "Lorem ipsum dolor sit amet consectetur adipisicing.",
           author: "Socrates",
           date: "Sep 14, 2020",

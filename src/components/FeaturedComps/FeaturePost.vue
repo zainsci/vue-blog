@@ -1,7 +1,7 @@
 <template>
   <div class="feature-post">
     <div class="feature-title">
-      <a href="#">{{ feature.title }}</a>
+      <router-link :to="'/post/' + feature.id">{{ feature.title }}</router-link>
     </div>
     <div class="feature-auth">
       <span>
@@ -14,7 +14,7 @@
     </div>
     <div class="feature-content">
       <p>{{ feature.content }}...</p>
-      <a href="#">Read More</a>
+      <router-link :to="'/post/' + feature.id">Read More</router-link>
     </div>
   </div>
 </template>
