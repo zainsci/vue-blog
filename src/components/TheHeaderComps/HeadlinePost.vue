@@ -1,8 +1,8 @@
 <template>
   <div class="popular" :style="'background-image: url(' + imgSrc + ')'">
-    <a href="#">
+    <router-link to="/post/2">
       <h4>{{ heading }}</h4>
-    </a>
+    </router-link>
   </div>
 </template>
 

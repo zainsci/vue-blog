@@ -7,12 +7,12 @@
           background-image: url('https://images.unsplash.com/photo-1551717309-88444dbe54f5?w=1050');
         "
       >
-        <a href="#">
+        <router-link to="/post/1">
           <h1>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit.
             Architecto, ut porro aut asperiores temporibus in!
           </h1>
-        </a>
+        </router-link>
       </div>
       <div class="popular-posts">
         <headline-post
