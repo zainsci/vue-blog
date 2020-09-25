@@ -88,4 +88,8 @@ img {
   color: var(--text);
   line-height: 1.5;
 }
+nav .router-link-active {
+  padding-bottom: 5px;
+  border-bottom: 2px solid var(--primary);
+}
 </style>
