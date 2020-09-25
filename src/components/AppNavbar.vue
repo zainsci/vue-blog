@@ -3,9 +3,7 @@
     <container>
       <div class="navbar">
         <div class="logo">
-          <a href="/">
-            <span>B</span>log.
-          </a>
+          <a href="/"> <span>B</span>log. </a>
         </div>
         <div class="nav-button" v-on:click="displayNavbar">
           <svg
@@ -25,16 +23,21 @@
         <nav class="navbar-nav">
           <ul>
             <li>
-              <a href="#home" v-on:click="$emit('home-page')">Home</a>
+              <router-link to="/home">Home</router-link>
             </li>
             <li>
-              <a href="#all-posts" v-on:click="$emit('all-post')">All Posts</a>
+              <router-link to="/all-posts">All Posts</router-link>
             </li>
             <li>
-              <a href="#contact" v-on:click="$emit('contact')">Contact</a>
+              <router-link to="/contact">Contact</router-link>
             </li>
           </ul>
-          <Input tyoe="search" name="search" id="header-search" :placeholder="'Search'" />
+          <Input
+            type="search"
+            name="search"
+            id="header-search"
+            :placeholder="'Search'"
+          />
         </nav>
       </div>
     </container>
@@ -53,7 +56,7 @@ export default {
   props: {},
   data() {
     return {
-      displayNavbar: function () {
+      displayNavbar: function() {
         if (document.querySelector(".navbar").style.height === "360px") {
           document.querySelector(".navbar").style.height = "70px";
         } else {

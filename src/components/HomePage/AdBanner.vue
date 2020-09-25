@@ -6,10 +6,10 @@
           class="banner-image"
           :style="
             'height:' +
-            bannerHeight +
-            ';background-image:url(' +
-            bannerImg +
-            ')'
+              bannerHeight +
+              ';background-image:url(' +
+              bannerImg +
+              ')'
           "
         >
           <div class="base-banner-title">Lorem ipsum dolor sit amet</div>
@@ -29,7 +29,7 @@ export default {
   name: "ad-banner",
   components: { Container },
   props: {
-    bannerHeight: Number,
+    bannerHeight: String,
     bannerImg: String,
   },
 };

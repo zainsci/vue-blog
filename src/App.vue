@@ -1,7 +1,11 @@
 <template>
   <div id="app">
-    <app-navbar @home-page="showHomePage" @all-post="showAllPost" @contact="showContact" />
-    <component :is="MainPage"></component>
+    <app-navbar
+      @home-page="showHomePage"
+      @all-post="showAllPost"
+      @contact="showContact"
+    />
+    <router-view></router-view>
     <tag-cloud />
     <app-footer />
   </div>
@@ -10,9 +14,6 @@
 <script>
 import AppNavbar from "./components/AppNavbar.vue";
 import AppFooter from "./components/AppFooter.vue";
-import HomePage from "./components/HomePage.vue";
-import AllPosts from "./components/AllPosts.vue";
-import ContactForm from "./components/ContactForm.vue";
 import TagCloud from "./components/TagCloud.vue";
 
 export default {
@@ -20,9 +21,6 @@ export default {
   components: {
     AppNavbar,
     AppFooter,
-    HomePage,
-    AllPosts,
-    ContactForm,
     TagCloud,
   },
   data() {

@@ -1,12 +1,8 @@
-import Vue from "vue";
-import Router from "vue-router";
 import HomePage from "../components/HomePage.vue";
 import ContactForm from "../components/ContactForm.vue";
 import AllPosts from "../components/AllPosts.vue";
 
-Vue.use(Router);
-
-const routes = [
+const Routes = [
   { path: "/", component: HomePage },
   { path: "/home", component: HomePage },
   {
@@ -19,6 +15,4 @@ const routes = [
   },
 ];
 
-export default router = new Router({
-  routes: routes,
-});
+export default Routes;
