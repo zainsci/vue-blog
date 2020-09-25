@@ -3,7 +3,9 @@
     <container>
       <div class="navbar">
         <div class="logo">
-          <a href="/"> <span>B</span>log. </a>
+          <a href="/">
+            <span>B</span>log.
+          </a>
         </div>
         <div class="nav-button" v-on:click="displayNavbar">
           <svg
@@ -32,12 +34,7 @@
               <a href="#contact" v-on:click="$emit('contact')">Contact</a>
             </li>
           </ul>
-          <Input
-            tyoe="search"
-            name="search"
-            id="header-search"
-            :placeholder="'Search'"
-          />
+          <Input tyoe="search" name="search" id="header-search" :placeholder="'Search'" />
         </nav>
       </div>
     </container>
@@ -48,7 +45,7 @@
 import Container from "./Utils/Container.vue";
 import Input from "./Forms/Input.vue";
 export default {
-  name: "main-navbar",
+  name: "app-navbar",
   components: {
     Container,
     Input,
