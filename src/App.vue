@@ -1,10 +1,6 @@
 <template>
   <div id="app">
-    <app-navbar
-      @home-page="showHomePage"
-      @all-post="showAllPost"
-      @contact="showContact"
-    />
+    <app-navbar @home-page="showHomePage" @all-post="showAllPost" @contact="showContact" />
     <component :is="MainPage"></component>
     <tag-cloud />
     <app-footer />
