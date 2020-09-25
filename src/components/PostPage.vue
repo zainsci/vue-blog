@@ -5,133 +5,10 @@
         <img :src="postHeaderImg" alt="Image" />
       </div>
       <header class="post-header">
-        <h1>A Brain Trick to Make You More Creative, Intuitive, and Happy</h1>
+        <h1>{{ body.title }}</h1>
       </header>
       <main class="post-body">
-        <p>
-          Cognitive ease refers, quite simply, to the degree of mental effort
-          required for a given task. Your brain registers “easy” as a sign that
-          things are going well — no threats, no major news, no need to redirect
-          attention or mobilize effort. Cognitive ease facilitates the brain’s
-          “fast,” intuitive system for processing information, which aids in
-          creative thinking, accurate intuition, and even a pleasant mood.
-          Understanding how it works can help you leverage its effects — in
-          others, and in yourself.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          Suspendisse ultrices gravida dictum fusce ut placerat orci. Nunc sed
-          id semper risus in hendrerit gravida rutrum. Nisl tincidunt eget
-          nullam non nisi. Dignissim suspendisse in est ante in nibh mauris.
-          Magna fermentum iaculis eu non diam phasellus vestibulum lorem. Sed
-          ullamcorper morbi tincidunt ornare massa eget egestas purus. Posuere
-          morbi leo urna molestie at. Aliquam faucibus purus in massa. Nec dui
-          nunc mattis enim ut tellus elementum sagittis. Ipsum a arcu cursus
-          vitae congue mauris rhoncus aenean vel. Gravida in fermentum et
-          sollicitudin ac. Malesuada fames ac turpis egestas maecenas pharetra.
-          Iaculis nunc sed augue lacus viverra vitae congue eu consequat. Quis
-          blandit turpis cursus in hac habitasse platea dictumst. A condimentum
-          vitae sapien pellentesque habitant morbi. In nisl nisi scelerisque eu
-          ultrices. Eu facilisis sed odio morbi quis commodo. Semper quis lectus
-          nulla at volutpat diam ut venenatis. Diam maecenas ultricies mi eget
-          mauris pharetra et ultrices.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          Suspendisse ultrices gravida dictum fusce ut placerat orci. Nunc sed
-          id semper risus in hendrerit gravida rutrum. Nisl tincidunt eget
-          nullam non nisi. Dignissim suspendisse in est ante in nibh mauris.
-          Magna fermentum iaculis eu non diam phasellus vestibulum lorem. Sed
-          ullamcorper morbi tincidunt ornare massa eget egestas purus. Posuere
-          morbi leo urna molestie at. Aliquam faucibus purus in massa. Nec dui
-          nunc mattis enim ut tellus elementum sagittis. Ipsum a arcu cursus
-          vitae congue mauris rhoncus aenean vel. Gravida in fermentum et
-          sollicitudin ac. Malesuada fames ac turpis egestas maecenas pharetra.
-          Iaculis nunc sed augue lacus viverra vitae congue eu consequat. Quis
-          blandit turpis cursus in hac habitasse platea dictumst. A condimentum
-          vitae sapien pellentesque habitant morbi. In nisl nisi scelerisque eu
-          ultrices. Eu facilisis sed odio morbi quis commodo. Semper quis lectus
-          nulla at volutpat diam ut venenatis. Diam maecenas ultricies mi eget
-          mauris pharetra et ultrices.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          Suspendisse ultrices gravida dictum fusce ut placerat orci. Nunc sed
-          id semper risus in hendrerit gravida rutrum. Nisl tincidunt eget
-          nullam non nisi. Dignissim suspendisse in est ante in nibh mauris.
-          Magna fermentum iaculis eu non diam phasellus vestibulum lorem. Sed
-          ullamcorper morbi tincidunt ornare massa eget egestas purus. Posuere
-          morbi leo urna molestie at. Aliquam faucibus purus in massa. Nec dui
-          nunc mattis enim ut tellus elementum sagittis. Ipsum a arcu cursus
-          vitae congue mauris rhoncus aenean vel. Gravida in fermentum et
-          sollicitudin ac. Malesuada fames ac turpis egestas maecenas pharetra.
-          Iaculis nunc sed augue lacus viverra vitae congue eu consequat. Quis
-          blandit turpis cursus in hac habitasse platea dictumst. A condimentum
-          vitae sapien pellentesque habitant morbi. In nisl nisi scelerisque eu
-          ultrices. Eu facilisis sed odio morbi quis commodo. Semper quis lectus
-          nulla at volutpat diam ut venenatis. Diam maecenas ultricies mi eget
-          mauris pharetra et ultrices.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          Suspendisse ultrices gravida dictum fusce ut placerat orci. Nunc sed
-          id semper risus in hendrerit gravida rutrum. Nisl tincidunt eget
-          nullam non nisi. Dignissim suspendisse in est ante in nibh mauris.
-          Magna fermentum iaculis eu non diam phasellus vestibulum lorem. Sed
-          ullamcorper morbi tincidunt ornare massa eget egestas purus. Posuere
-          morbi leo urna molestie at. Aliquam faucibus purus in massa. Nec dui
-          nunc mattis enim ut tellus elementum sagittis. Ipsum a arcu cursus
-          vitae congue mauris rhoncus aenean vel. Gravida in fermentum et
-          sollicitudin ac. Malesuada fames ac turpis egestas maecenas pharetra.
-          Iaculis nunc sed augue lacus viverra vitae congue eu consequat. Quis
-          blandit turpis cursus in hac habitasse platea dictumst. A condimentum
-          vitae sapien pellentesque habitant morbi. In nisl nisi scelerisque eu
-          ultrices. Eu facilisis sed odio morbi quis commodo. Semper quis lectus
-          nulla at volutpat diam ut venenatis. Diam maecenas ultricies mi eget
-          mauris pharetra et ultrices.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          Suspendisse ultrices gravida dictum fusce ut placerat orci. Nunc sed
-          id semper risus in hendrerit gravida rutrum. Nisl tincidunt eget
-          nullam non nisi. Dignissim suspendisse in est ante in nibh mauris.
-          Magna fermentum iaculis eu non diam phasellus vestibulum lorem. Sed
-          ullamcorper morbi tincidunt ornare massa eget egestas purus. Posuere
-          morbi leo urna molestie at. Aliquam faucibus purus in massa. Nec dui
-          nunc mattis enim ut tellus elementum sagittis. Ipsum a arcu cursus
-          vitae congue mauris rhoncus aenean vel. Gravida in fermentum et
-          sollicitudin ac. Malesuada fames ac turpis egestas maecenas pharetra.
-          Iaculis nunc sed augue lacus viverra vitae congue eu consequat. Quis
-          blandit turpis cursus in hac habitasse platea dictumst. A condimentum
-          vitae sapien pellentesque habitant morbi. In nisl nisi scelerisque eu
-          ultrices. Eu facilisis sed odio morbi quis commodo. Semper quis lectus
-          nulla at volutpat diam ut venenatis. Diam maecenas ultricies mi eget
-          mauris pharetra et ultrices.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          Suspendisse ultrices gravida dictum fusce ut placerat orci. Nunc sed
-          id semper risus in hendrerit gravida rutrum. Nisl tincidunt eget
-          nullam non nisi. Dignissim suspendisse in est ante in nibh mauris.
-          Magna fermentum iaculis eu non diam phasellus vestibulum lorem. Sed
-          ullamcorper morbi tincidunt ornare massa eget egestas purus. Posuere
-          morbi leo urna molestie at. Aliquam faucibus purus in massa. Nec dui
-          nunc mattis enim ut tellus elementum sagittis. Ipsum a arcu cursus
-          vitae congue mauris rhoncus aenean vel. Gravida in fermentum et
-          sollicitudin ac. Malesuada fames ac turpis egestas maecenas pharetra.
-          Iaculis nunc sed augue lacus viverra vitae congue eu consequat. Quis
-          blandit turpis cursus in hac habitasse platea dictumst. A condimentum
-          vitae sapien pellentesque habitant morbi. In nisl nisi scelerisque eu
-          ultrices. Eu facilisis sed odio morbi quis commodo. Semper quis lectus
-          nulla at volutpat diam ut venenatis. Diam maecenas ultricies mi eget
-          mauris pharetra et ultrices.
-        </p>
+        <p>{{ body.body }}</p>
       </main>
       <footer class="post-footer">
         <div class="newsletter">
@@ -173,7 +50,7 @@
           <div class="author-meta">
             <div class="author-name">
               <a href="#">
-                <h3>Zain Shabbir</h3>
+                <h3>Arthur Schopenhaeur</h3>
               </a>
             </div>
             <div class="author-desc">
@@ -197,7 +74,24 @@ export default {
   components: {
     Container,
   },
-  props: { postHeaderImg: String, authorImg: String },
+  props: {},
+  data() {
+    return {
+      postHeaderImg:
+        "https://images.unsplash.com/photo-1600998837340-4887228e311f?&w=1500",
+      authorImg:
+        "https://images.unsplash.com/photo-1601002719958-565666329717?w=750",
+      id: this.$route.params.id,
+      body: {},
+    };
+  },
+  created() {
+    fetch("https://jsonplaceholder.typicode.com/posts/" + this.id)
+      .then((res) => res.json())
+      .then((data) => {
+        this.body = data;
+      });
+  },
 };
 </script>
 
