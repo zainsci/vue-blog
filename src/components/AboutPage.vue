@@ -47,7 +47,7 @@ export default {
 }
 .about-text {
   width: 50%;
-  min-width: 500px;
+  min-width: 400px;
 }
 h1 {
   font-weight: 600;
@@ -60,5 +60,13 @@ p {
   margin-bottom: 40px;
   line-height: 1.5;
   font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .about-text {
+    width: 100%;
+    padding: 20px;
+    min-width: 350px;
+  }
 }
 </style>
