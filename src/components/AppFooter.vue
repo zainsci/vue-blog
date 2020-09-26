@@ -2,9 +2,7 @@
   <footer>
     <container>
       <div class="upper-footer">
-        <div class="logo">
-          <span>B</span>LOG.
-        </div>
+        <div class="logo"><span>B</span>LOG.</div>
         <ul class="social-icons">
           <li class="social-icon">
             <a href="https://www.facebook.com">
@@ -69,7 +67,7 @@
         </div>
         <ul class="nav-links">
           <li>
-            <a href="#">About</a>
+            <router-link to="/about">About</router-link>
           </li>
           <li>
             <a href="#">Contant</a>
