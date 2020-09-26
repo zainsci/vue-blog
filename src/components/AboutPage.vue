@@ -1,7 +1,7 @@
 <template>
   <div
     class="about"
-    style="background-image: url('https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=2500')"
+    style="background-image: url('https://images.unsplash.com/photo-1450873622936-c13d06e998e5?w=2500')"
   >
     <container>
       <div class="about-text">
