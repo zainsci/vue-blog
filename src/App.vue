@@ -14,7 +14,7 @@
 <script>
 import AppNavbar from "./components/AppNavbar.vue";
 import AppFooter from "./components/AppFooter.vue";
-import TagCloud from "./components/TagCloud.vue";
+import TagCloud from "./components/Others/TagCloud.vue";
 
 export default {
   name: "App",

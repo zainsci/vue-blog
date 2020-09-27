@@ -1,8 +1,8 @@
-import HomePage from "../components/HomePage.vue";
-import ContactForm from "../components/ContactForm.vue";
-import AllPosts from "../components/AllPosts.vue";
-import PostPage from "../components/PostPage.vue";
-import AboutPage from "../components/AboutPage.vue";
+import HomePage from "../components/Pages/HomePage.vue";
+import ContactForm from "../components/Pages/ContactPage.vue";
+import AllPosts from "../components/Posts/AllPosts.vue";
+import PostPage from "../components/Posts/PostPage.vue";
+import AboutPage from "../components/Pages/AboutPage.vue";
 
 const Routes = [
   { path: "/", component: HomePage },

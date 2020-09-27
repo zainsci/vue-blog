@@ -1,13 +1,13 @@
 <template>
   <div
     class="about"
-    style="background-image: url('https://images.unsplash.com/photo-1450873622936-c13d06e998e5?w=2500')"
+    style="
+      background-image: url('https://images.unsplash.com/photo-1450873622936-c13d06e998e5?w=2500');
+    "
   >
     <container>
       <div class="about-text">
-        <h1>
-          About Us.
-        </h1>
+        <h1>About Us.</h1>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
           suscipit labore mollitia nam cum officiis. Lorem ipsum dolor sit amet
@@ -18,15 +18,15 @@
           quaerat? Expedita doloribus debitis quae quisquam vitae ducimus?
           Placeat, laboriosam.
         </p>
-        <router-link to="/contact"><Button btnText="Contact"/></router-link>
+        <router-link to="/contact"><Button btnText="Contact" /></router-link>
       </div>
     </container>
   </div>
 </template>
 
 <script>
-import container from "./Utils/Container.vue";
-import Button from "./Components/Button.vue";
+import container from "../Utils/Container.vue";
+import Button from "../BasicComponents/Components/Button.vue";
 export default {
   name: "about-page",
   components: {

@@ -46,7 +46,8 @@
 
 <script>
 import Container from "./Utils/Container.vue";
-import Input from "./Forms/Input.vue";
+import Input from "./BasicComponents/Form/Input.vue";
+
 export default {
   name: "app-navbar",
   components: {
@@ -56,7 +57,7 @@ export default {
   props: {},
   data() {
     return {
-      displayNavbar: function() {
+      displayNavbar: function () {
         if (document.querySelector(".navbar").style.height === "360px") {
           document.querySelector(".navbar").style.height = "70px";
         } else {

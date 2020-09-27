@@ -37,10 +37,10 @@
 
 <script>
 import Container from "../Utils/Container.vue";
-import HeadlinePost from "../TheHeaderComps/HeadlinePost.vue";
+import HeadlinePost from "./HeadlinePost.vue";
 
 export default {
-  name: "main-head",
+  name: "head-posts",
   components: {
     Container,
     HeadlinePost,

@@ -22,7 +22,7 @@
 
 <script>
 export default {
-  name: "latest-posts",
+  name: "latest-list",
   props: { latest: Array },
 };
 </script>

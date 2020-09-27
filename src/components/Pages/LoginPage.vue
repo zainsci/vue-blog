@@ -13,9 +13,9 @@
 </template>
 
 <script>
-import Label from "./Forms/Label.vue";
-import Input from "./Forms/Input.vue";
-import Button from "./Components/Button.vue";
+import Label from "../BasicComponents/Forms/Label.vue";
+import Input from "../BasicComponents/Forms/Input.vue";
+import Button from "../BasicComponents/Components/Button.vue";
 
 export default {
   name: "login-form",

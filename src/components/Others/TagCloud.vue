@@ -56,7 +56,7 @@
 </template>
 
 <script>
-import Container from "./Utils/Container.vue";
+import Container from "../Utils/Container.vue";
 export default {
   name: "tag-cloud",
   components: {

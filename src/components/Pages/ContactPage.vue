@@ -18,13 +18,13 @@
 </template>
 
 <script>
-import Label from "./Forms/Label.vue";
-import TextArea from "./Forms/TextArea.vue";
-import Input from "./Forms/Input.vue";
-import Button from "./Components/Button.vue";
+import Label from "../BasicComponents/Form/Label.vue";
+import TextArea from "../BasicComponents/Form/TextArea.vue";
+import Input from "../BasicComponents/Form/Input.vue";
+import Button from "../BasicComponents/Components/Button.vue";
 
 export default {
-  name: "contact-form",
+  name: "contact-page",
   props: {},
   components: {
     Label,

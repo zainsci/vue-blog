@@ -7,7 +7,7 @@
             <feature-post :feature="feature" />
           </div>
         </div>
-        <latest-posts :latest="latest" />
+        <latest-list :latest="latest" />
       </div>
     </container>
   </section>
@@ -15,12 +15,12 @@
 
 <script>
 import Container from "../Utils/Container.vue";
-import FeaturePost from "../FeaturedComps/FeaturePost.vue";
-import LatestPosts from "../FeaturedComps/LatestPosts.vue";
+import FeaturePost from "../Posts/FeaturePost.vue";
+import LatestList from "../Posts/LatestList.vue";
 
 export default {
   name: "featured-articles",
-  components: { Container, FeaturePost, LatestPosts },
+  components: { Container, FeaturePost, LatestList },
   props: {},
   data() {
     return {

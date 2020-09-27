@@ -1,6 +1,6 @@
 <template>
   <main>
-    <main-head />
+    <head-posts />
     <ad-banner
       bannerHeight="150px"
       bannerImg="https://images.unsplash.com/photo-1599904182194-d519a3268229?w=1229"
@@ -10,15 +10,15 @@
 </template>
 
 <script>
-import MainHead from "./HomePage/MainHead.vue";
-import AdBanner from "./HomePage/AdBanner.vue";
-import FeaturedArticles from "./HomePage/FeaturedArticles.vue";
+import HeadPosts from "../Posts/HeadPosts.vue";
+import AdBanner from "../Others/AdBanner.vue";
+import FeaturedArticles from "../Pages/FeaturedArticles.vue";
 
 export default {
   name: "home-page",
   props: {},
   components: {
-    MainHead,
+    HeadPosts,
     AdBanner,
     FeaturedArticles,
   },

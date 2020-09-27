@@ -10,8 +10,8 @@
 </template>
 
 <script>
-import Container from "./Utils/Container.vue";
-import UserPost from "./BaseSectionComps/UserPost.vue";
+import Container from "../Utils/Container.vue";
+import UserPost from "./UserPost.vue";
 
 export default {
   name: "all-posts",
