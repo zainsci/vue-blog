@@ -9,7 +9,7 @@
       </div>
       <div class="author-meta">
         <div class="author-name">
-          <h2>{{ user.name }}</h2>
+          <h1>{{ user.name }}</h1>
         </div>
         <div class="author-description">
           <p>
@@ -44,4 +44,17 @@ export default {
 </script>
 
 <style scoped>
+.author {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 40px 0;
+}
+.author-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 40px;
+}
 </style>
