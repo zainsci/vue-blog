@@ -1,12 +1,9 @@
 <template>
   <div id="app">
-    <app-navbar
-      @home-page="showHomePage"
-      @all-post="showAllPost"
-      @contact="showContact"
-    />
+    <app-navbar />
     <router-view></router-view>
     <tag-cloud />
+    <footer-posts />
     <app-footer />
   </div>
 </template>
@@ -15,12 +12,14 @@
 import AppNavbar from "./components/AppNavbar.vue";
 import AppFooter from "./components/AppFooter.vue";
 import TagCloud from "./components/Others/TagCloud.vue";
+import FooterPosts from "./components/Posts/FooterPosts.vue";
 
 export default {
   name: "App",
   components: {
     AppNavbar,
     AppFooter,
+    FooterPosts,
     TagCloud,
   },
   data() {
@@ -28,17 +27,7 @@ export default {
       MainPage: "HomePage",
     };
   },
-  methods: {
-    showContact() {
-      this.MainPage = "ContactForm";
-    },
-    showAllPost() {
-      this.MainPage = "AllPosts";
-    },
-    showHomePage() {
-      this.MainPage = "HomePage";
-    },
-  },
+  methods: {},
 };
 </script>
 
