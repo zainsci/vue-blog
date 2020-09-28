@@ -6,14 +6,21 @@
     </header>
     <ul>
       <li v-for="every in latest" :key="every.id">
-        <div class="latest-title">
-          <router-link :to="'/post/' + every.id">{{ every.title }}</router-link>
+        <div class="latest-img">
+          <img src="https://picsum.photos/60" alt="" />
         </div>
-        <div class="latest-meta">
-          <a href="#">
-            <span class="latest-meta-name">{{ every.author }}</span>
-          </a>
-          <span class="latest-meta-time">{{ every.date }}</span>
+        <div class="latest-text">
+          <div class="latest-title">
+            <router-link :to="'/post/' + every.id">{{
+              every.title
+            }}</router-link>
+          </div>
+          <div class="latest-meta">
+            <a href="#">
+              <span class="latest-meta-name">{{ every.author }}</span>
+            </a>
+            <span class="latest-meta-time">{{ every.date }}</span>
+          </div>
         </div>
       </li>
     </ul>
@@ -53,9 +60,20 @@ export default {
   padding: 18px 12px;
   margin-bottom: 10px;
   border-bottom: 1px solid var(--text);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 }
 .latest ul li:hover a {
   color: var(--primary);
+}
+.latest-img {
+  min-width: 60px;
+  max-width: 60px;
+  height: 60px;
+  overflow: hidden;
+  margin-right: 10px;
+  margin-top: 5px;
 }
 .latest-title {
   margin-bottom: 10px;
