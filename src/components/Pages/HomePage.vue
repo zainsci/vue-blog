@@ -35,28 +35,28 @@ export default {
     return {
       footerPosts: [
         {
-          key: 0,
+          id: 0,
           imgSrc:
             "https://images.unsplash.com/photo-1601214571524-34e8f3e46cc9?w=1500",
           title:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate,aspernatur.",
         },
         {
-          key: 1,
+          id: 1,
           imgSrc:
             "https://images.unsplash.com/photo-1601214571524-34e8f3e46cc9?w=1500",
           title:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate,aspernatur.",
         },
         {
-          key: 2,
+          id: 2,
           imgSrc:
             "https://images.unsplash.com/photo-1601214571524-34e8f3e46cc9?w=1500",
           title:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate,aspernatur.",
         },
         {
-          key: 3,
+          id: 3,
           imgSrc:
             "https://images.unsplash.com/photo-1601214571524-34e8f3e46cc9?w=1500",
           title:

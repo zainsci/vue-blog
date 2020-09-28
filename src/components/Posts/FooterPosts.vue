@@ -1,7 +1,7 @@
 <template>
   <footer>
-    <div class="footer-post" v-for="post in footerPosts" :key="post.key">
-      <a href="#">
+    <div class="footer-post" v-for="post in footerPosts" :key="post.id">
+      <router-link :to="'/post/' + post.id">
         <div class="footer-img">
           <img :src="post.imgSrc" alt="" />
         </div>
@@ -9,7 +9,7 @@
         <div class="footer-post-text">
           <h4>{{ post.title }}</h4>
         </div>
-      </a>
+      </router-link>
     </div>
   </footer>
 </template>
