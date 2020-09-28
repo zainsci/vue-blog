@@ -7,7 +7,7 @@
     <ul>
       <li v-for="every in latest" :key="every.id">
         <div class="latest-img">
-          <img src="https://picsum.photos/60" alt="" />
+          <img :src="every.imgSrc" alt="" />
         </div>
         <div class="latest-text">
           <div class="latest-title">
