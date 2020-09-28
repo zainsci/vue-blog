@@ -43,7 +43,6 @@ a:hover h4 {
 .banner {
   max-width: 700px;
   min-height: 200px;
-  max-height: 250px;
   background: rgba(0, 0, 0, 0.05);
   color: var(--text);
   display: flex;
@@ -64,5 +63,24 @@ a:hover h4 {
   padding: 20px;
   min-height: inherit;
   line-height: 1.5;
+}
+
+@media (max-width: 660px) {
+  .banner {
+    width: 50%;
+    margin: auto;
+    height: fit-content;
+    padding: 10px;
+    flex-direction: column;
+    margin-top: 40px;
+  }
+  .banner-img {
+    width: 100%;
+    height: 100%;
+  }
+  .banner-text {
+    width: 100%;
+    height: fit-content;
+  }
 }
 </style>
