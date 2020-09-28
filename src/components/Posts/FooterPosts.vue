@@ -1,70 +1,13 @@
 <template>
   <footer>
-    <div class="footer-post">
+    <div class="footer-post" v-for="post in footerPosts" :key="post.key">
       <a href="#">
         <div class="footer-img">
-          <img
-            src="https://images.unsplash.com/photo-1601214571524-34e8f3e46cc9?w=1500"
-            alt=""
-          />
+          <img :src="post.imgSrc" alt="" />
         </div>
 
         <div class="footer-post-text">
-          <h4>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate,
-            aspernatur.
-          </h4>
-        </div>
-      </a>
-    </div>
-    <div class="footer-post">
-      <a href="#">
-        <div class="footer-img">
-          <img
-            src="https://images.unsplash.com/photo-1601214571524-34e8f3e46cc9?w=1500"
-            alt=""
-          />
-        </div>
-
-        <div class="footer-post-text">
-          <h4>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate,
-            aspernatur.
-          </h4>
-        </div>
-      </a>
-    </div>
-    <div class="footer-post">
-      <a href="#">
-        <div class="footer-img">
-          <img
-            src="https://images.unsplash.com/photo-1601214571524-34e8f3e46cc9?w=1500"
-            alt=""
-          />
-        </div>
-
-        <div class="footer-post-text">
-          <h4>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate,
-            aspernatur.
-          </h4>
-        </div>
-      </a>
-    </div>
-    <div class="footer-post">
-      <a href="#">
-        <div class="footer-img">
-          <img
-            src="https://images.unsplash.com/photo-1601214571524-34e8f3e46cc9?w=1500"
-            alt=""
-          />
-        </div>
-
-        <div class="footer-post-text">
-          <h4>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate,
-            aspernatur.
-          </h4>
+          <h4>{{ post.title }}</h4>
         </div>
       </a>
     </div>
@@ -74,6 +17,9 @@
 <script>
 export default {
   name: "footer-posts",
+  props: {
+    footerPosts: Array,
+  },
 };
 </script>
 

@@ -7,6 +7,8 @@
     />
     <featured-articles />
     <paid-banner />
+    <tag-cloud />
+    <footer-posts :footerPosts="footerPosts" />
   </main>
 </template>
 
@@ -15,6 +17,8 @@ import HeadPosts from "../Posts/HeadPosts.vue";
 import AdBanner from "../Others/AdBanner.vue";
 import FeaturedArticles from "../Pages/FeaturedArticles.vue";
 import PaidBanner from "../Others/PaidBanner.vue";
+import TagCloud from "../Others/TagCloud.vue";
+import FooterPosts from "../Posts/FooterPosts.vue";
 
 export default {
   name: "home-page",
@@ -24,6 +28,42 @@ export default {
     AdBanner,
     FeaturedArticles,
     PaidBanner,
+    TagCloud,
+    FooterPosts,
+  },
+  data() {
+    return {
+      footerPosts: [
+        {
+          key: 0,
+          imgSrc:
+            "https://images.unsplash.com/photo-1601214571524-34e8f3e46cc9?w=1500",
+          title:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate,aspernatur.",
+        },
+        {
+          key: 1,
+          imgSrc:
+            "https://images.unsplash.com/photo-1601214571524-34e8f3e46cc9?w=1500",
+          title:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate,aspernatur.",
+        },
+        {
+          key: 2,
+          imgSrc:
+            "https://images.unsplash.com/photo-1601214571524-34e8f3e46cc9?w=1500",
+          title:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate,aspernatur.",
+        },
+        {
+          key: 3,
+          imgSrc:
+            "https://images.unsplash.com/photo-1601214571524-34e8f3e46cc9?w=1500",
+          title:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate,aspernatur.",
+        },
+      ],
+    };
   },
 };
 </script>

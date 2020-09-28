@@ -2,8 +2,6 @@
   <div id="app">
     <app-navbar />
     <router-view></router-view>
-    <tag-cloud />
-    <footer-posts />
     <app-footer />
   </div>
 </template>
@@ -11,16 +9,12 @@
 <script>
 import AppNavbar from "./components/AppNavbar.vue";
 import AppFooter from "./components/AppFooter.vue";
-import TagCloud from "./components/Others/TagCloud.vue";
-import FooterPosts from "./components/Posts/FooterPosts.vue";
 
 export default {
   name: "App",
   components: {
     AppNavbar,
     AppFooter,
-    FooterPosts,
-    TagCloud,
   },
   data() {
     return {
