@@ -49,9 +49,9 @@
           ></div>
           <div class="author-meta">
             <div class="author-name">
-              <a href="#">
+              <router-link :to="'/author/' + body.userId">
                 <h3>Arthur Schopenhaeur</h3>
-              </a>
+              </router-link>
             </div>
             <div class="author-desc">
               <p>

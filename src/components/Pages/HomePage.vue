@@ -40,6 +40,7 @@ export default {
             "https://images.unsplash.com/photo-1601214571524-34e8f3e46cc9?w=1500",
           title:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate,aspernatur.",
+          authorId: 1,
         },
         {
           id: 1,
@@ -47,6 +48,7 @@ export default {
             "https://images.unsplash.com/photo-1601214571524-34e8f3e46cc9?w=1500",
           title:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate,aspernatur.",
+          authorId: 2,
         },
         {
           id: 2,
@@ -54,6 +56,7 @@ export default {
             "https://images.unsplash.com/photo-1601214571524-34e8f3e46cc9?w=1500",
           title:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate,aspernatur.",
+          authorId: 3,
         },
         {
           id: 3,
@@ -61,6 +64,7 @@ export default {
             "https://images.unsplash.com/photo-1601214571524-34e8f3e46cc9?w=1500",
           title:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate,aspernatur.",
+          authorId: 4,
         },
       ],
     };
