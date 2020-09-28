@@ -3,6 +3,7 @@ import ContactForm from "../components/Pages/ContactPage.vue";
 import AllPosts from "../components/Posts/AllPosts.vue";
 import PostPage from "../components/Posts/PostPage.vue";
 import AboutPage from "../components/Pages/AboutPage.vue";
+import Author from "../components/Pages/Author.vue";
 
 const Routes = [
   { path: "/", component: HomePage },
@@ -19,6 +20,10 @@ const Routes = [
   {
     path: "/post/:id",
     component: PostPage,
+  },
+  {
+    path: "/author/:id",
+    component: Author,
   },
 ];
 
