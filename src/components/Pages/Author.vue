@@ -2,19 +2,17 @@
   <container>
     <div class="author">
       <div class="author-img">
-        <img
-          src="https://images.unsplash.com/photo-1600518225509-72061d915f4d?w=1500"
-          alt="Painting"
-        />
+        <img :src="author.img" :alt="author.name" />
       </div>
       <div class="author-meta">
         <div class="author-name">
-          <h1>{{ user.name }}</h1>
+          <h1>{{ author.name }}</h1>
         </div>
         <div class="author-description">
+          <h4>{{ author.username }}</h4>
+          <h4>{{ author.email }}</h4>
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas,
-            explicabo.
+            {{ author.about }}
           </p>
         </div>
       </div>
@@ -29,15 +27,23 @@ export default {
   components: { Container },
   data() {
     return {
-      user: {},
-      userId: this.$route.params.id,
+      author: {},
+      id: this.$route.params.id,
     };
   },
   created() {
-    fetch("http://jsonplaceholder.typicode.com/users/" + this.userId)
+    fetch("http://jsonplaceholder.typicode.com/users/" + this.id)
       .then((res) => res.json())
       .then((data) => {
-        this.user = data;
+        data.forEach((author) => {
+          if (author.id == this.id) {
+            this.author = author;
+          } else {
+            this.author = {
+              name: "Not Found",
+            };
+          }
+        });
       });
   },
 };
