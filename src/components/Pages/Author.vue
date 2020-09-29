@@ -2,7 +2,7 @@
   <container>
     <div class="author">
       <div class="author-img">
-        <img :src="author.img" :alt="author.name" />
+        <img :src="author.img" :alt="author.name" width="150px" />
       </div>
       <div class="author-meta">
         <div class="author-name">
@@ -31,17 +31,17 @@ export default {
       id: this.$route.params.id,
     };
   },
-  created() {
-    fetch("http://jsonplaceholder.typicode.com/users/" + this.id)
+  mounted() {
+    fetch(
+      "https://raw.githubusercontent.com/zainsci/Blog/master/src/data/authors.json"
+    )
       .then((res) => res.json())
       .then((data) => {
+        console.log(data);
         data.forEach((author) => {
-          if (author.id == this.id) {
+          if (author.id === parseInt(this.id)) {
+            console.log(author);
             this.author = author;
-          } else {
-            this.author = {
-              name: "Not Found",
-            };
           }
         });
       });
@@ -58,9 +58,24 @@ export default {
 }
 .author-img {
   width: 150px;
+  min-width: 150px;
   height: 150px;
   border-radius: 50%;
   overflow: hidden;
   margin-right: 40px;
+}
+
+@media (max-width: 770px) {
+  .author {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+  }
+  .author-img {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
 }
 </style>
