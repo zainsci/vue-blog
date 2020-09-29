@@ -2,7 +2,7 @@
   <container>
     <div class="post">
       <div class="post-image">
-        <img :src="postHeaderImg" alt="Image" />
+        <img :src="body.imgSrc" alt="Image" />
       </div>
       <header class="post-header">
         <h1>{{ body.title }}</h1>
@@ -45,18 +45,17 @@
         <div class="author">
           <div
             class="author-img"
-            :style="'background-image: url(' + authorImg + ')'"
+            :style="'background-image: url(' + body.user.img + ')'"
           ></div>
           <div class="author-meta">
             <div class="author-name">
-              <router-link :to="'/author/' + body.userId">
-                <h3>Arthur Schopenhaeur</h3>
+              <router-link :to="'/author/' + body.user.id">
+                <h3>{{ body.user.name }}</h3>
               </router-link>
             </div>
             <div class="author-desc">
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Provident, libero!
+                {{ body.user.about }}
               </p>
             </div>
           </div>
@@ -77,16 +76,14 @@ export default {
   props: {},
   data() {
     return {
-      postHeaderImg:
-        "https://images.unsplash.com/photo-1600998837340-4887228e311f?&w=1500",
-      authorImg:
-        "https://images.unsplash.com/photo-1601002719958-565666329717?w=750",
       id: this.$route.params.id,
       body: {},
     };
   },
   created() {
-    fetch("https://jsonplaceholder.typicode.com/posts/" + this.id)
+    fetch(
+      `https://raw.githubusercontent.com/zainsci/Blog/master/src/data/Posts/${this.id}.json`
+    )
       .then((res) => res.json())
       .then((data) => {
         this.body = data;

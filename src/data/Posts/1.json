@@ -3,5 +3,13 @@
   "id": 1,
   "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
   "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto",
-  "imgSrc": "https://images.unsplash.com/photo-1415639636295-61ae91a98b39?w=2500"
+  "imgSrc": "https://images.unsplash.com/photo-1415639636295-61ae91a98b39?w=2500",
+  "user": {
+    "id": 0,
+    "name": "Aristotle",
+    "username": "Aristotle",
+    "email": "aristotle@mail.com",
+    "about": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod, nisi. Tenetur voluptatem debitis ratione corrupti, accusamus in fuga voluptatibus atque.",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Aristotle_Altemps_Inv8575.jpg/1200px-Aristotle_Altemps_Inv8575.jpg"
+  }
 }

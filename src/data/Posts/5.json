@@ -3,5 +3,13 @@
   "id": 5,
   "title": "nesciunt quas odio",
   "body": "repudiandae veniam quaerat sunt sed\nalias aut fugiat sit autem sed est\nvoluptatem omnis possimus esse voluptatibus quis\nest aut tenetur dolor neque",
-  "imgSrc": "https://images.unsplash.com/photo-1508805022838-d47d1d6d9003?w=2500"
+  "imgSrc": "https://images.unsplash.com/photo-1508805022838-d47d1d6d9003?w=2500",
+  "user": {
+    "id": 4,
+    "name": "Immanuel Kant",
+    "username": "ImmanuelKant",
+    "email": "immanuelkant@mail.com",
+    "about": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod, nisi. Tenetur voluptatem debitis ratione corrupti, accusamus in fuga voluptatibus atque.",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Kant_gemaelde_3.jpg"
+  }
 }

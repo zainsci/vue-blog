@@ -33,17 +33,11 @@ export default {
   },
   mounted() {
     fetch(
-      "https://raw.githubusercontent.com/zainsci/Blog/master/src/data/authors.json"
+      `https://raw.githubusercontent.com/zainsci/Blog/master/src/data/Authors/${this.id}.json`
     )
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
-        data.forEach((author) => {
-          if (author.id === parseInt(this.id)) {
-            console.log(author);
-            this.author = author;
-          }
-        });
+        this.author = data;
       });
   },
 };
