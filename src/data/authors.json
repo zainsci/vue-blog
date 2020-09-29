@@ -1,0 +1,50 @@
+[
+  {
+    "id": 0,
+    "name": "Aristotle",
+    "username": "Aristotle",
+    "email": "aristotle@mail.com",
+    "about": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod, nisi. Tenetur voluptatem debitis ratione corrupti, accusamus in fuga voluptatibus atque.",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Aristotle_Altemps_Inv8575.jpg/1200px-Aristotle_Altemps_Inv8575.jpg"
+  },
+  {
+    "id": 1,
+    "name": "Plato",
+    "username": "Plato",
+    "email": "plato@mail.com",
+    "about": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod, nisi. Tenetur voluptatem debitis ratione corrupti, accusamus in fuga voluptatibus atque.",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Platon.png"
+  },
+  {
+    "id": 2,
+    "name": "Socrates",
+    "username": "Socrates",
+    "email": "socrates@mail.com",
+    "about": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod, nisi. Tenetur voluptatem debitis ratione corrupti, accusamus in fuga voluptatibus atque.",
+    "img": "https://cdn.britannica.com/69/75569-050-7AB67C4B/herm-Socrates-half-original-Greek-Capitoline-Museums.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Friedrich Nietzsche",
+    "username": "FriedrichNietzsche",
+    "email": "friedrichnietzsche@mail.com",
+    "about": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod, nisi. Tenetur voluptatem debitis ratione corrupti, accusamus in fuga voluptatibus atque.",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Nietzsche187a.jpg/1200px-Nietzsche187a.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Immanuel Kant",
+    "username": "ImmanuelKant",
+    "email": "immanuelkant@mail.com",
+    "about": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod, nisi. Tenetur voluptatem debitis ratione corrupti, accusamus in fuga voluptatibus atque.",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Kant_gemaelde_3.jpg"
+  },
+  {
+    "id": 5,
+    "name": "René Descartes",
+    "username": "RenéDescartes",
+    "email": "renédescartes@mail.com",
+    "about": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod, nisi. Tenetur voluptatem debitis ratione corrupti, accusamus in fuga voluptatibus atque.",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/7/73/Frans_Hals_-_Portret_van_Ren%C3%A9_Descartes.jpg"
+  }
+]
