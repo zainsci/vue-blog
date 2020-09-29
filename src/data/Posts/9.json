@@ -4,11 +4,11 @@
   "title": "nesciunt iure omnis dolorem tempora et accusantium",
   "body": "consectetur animi nesciunt iure dolore\nenim quia ad\nveniam autem ut quam aut nobis\net est aut quod aut provident voluptas autem voluptas",
   "imgSrc": "https://images.unsplash.com/photo-1506408117482-b60ae52a2480?w=2500",
+  "date": "29 September",
+  "readTime": "10 Min",
   "user": {
     "id": 2,
     "name": "Socrates",
-    "username": "Socrates",
-    "email": "socrates@mail.com",
     "about": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod, nisi. Tenetur voluptatem debitis ratione corrupti, accusamus in fuga voluptatibus atque.",
     "img": "https://cdn.britannica.com/69/75569-050-7AB67C4B/herm-Socrates-half-original-Greek-Capitoline-Museums.jpg"
   }

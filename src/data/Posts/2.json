@@ -4,11 +4,11 @@
   "title": "qui est esse",
   "body": "est rerum tempore vitae\nsequi sint nihil reprehenderit dolor beatae ea dolores neque\nfugiat blanditiis voluptate porro vel nihil molestiae ut reiciendis\nqui aperiam non debitis possimus qui neque nisi nulla",
   "imgSrc": "https://images.unsplash.com/photo-1466854076813-4aa9ac0fc347?w=2500",
+  "date": "29 September",
+  "readTime": "6 Min",
   "user": {
     "id": 1,
     "name": "Plato",
-    "username": "Plato",
-    "email": "plato@mail.com",
     "about": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod, nisi. Tenetur voluptatem debitis ratione corrupti, accusamus in fuga voluptatibus atque.",
     "img": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Platon.png"
   }
