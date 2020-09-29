@@ -1,23 +1,23 @@
 <template>
   <div class="post">
-    <div class="post-thumb" v-for="post in Posts" :key="post.key">
+    <div class="post-thumb" v-for="post in Posts" :key="post.id">
       <div class="post-author">
-        <a href="#">
+        <router-link :to="'/author/' + post.user.id">
           <div class="author-img">
-            <img :src="post.authImg" :alt="post.authImgAlt" />
+            <img :src="post.user.img" :alt="post.user.name" />
           </div>
           <div class="author-meta">
-            <div class="author-name">{{ post.authorName }}</div>
+            <div class="author-name">{{ post.user.name }}</div>
             <div class="submit-time">{{ post.date }} · {{ post.readTime }}</div>
           </div>
-        </a>
+        </router-link>
       </div>
       <div class="post-img">
-        <img :src="post.postImg" :alt="post.postImgAlt" />
+        <img :src="post.imgSrc" :alt="post.title" />
       </div>
       <div class="post-meta">
         <div class="post-title">
-          <a href="#">{{ post.postTitle }}</a>
+          <router-link :to="'/post/' + post.id">{{ post.title }}</router-link>
         </div>
       </div>
     </div>
