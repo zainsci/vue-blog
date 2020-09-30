@@ -27,7 +27,7 @@ export default {
 footer {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 .footer-post {
   width: 100%;
@@ -67,5 +67,9 @@ a:hover::before {
   color: var(--white);
   font-size: 22px;
   z-index: 5;
+}
+h4 {
+  text-align: left;
+  width: 100%;
 }
 </style>
