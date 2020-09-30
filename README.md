@@ -1,12 +1,13 @@
-# Personal Blog With VUE.js
+# Blog Website Template With Vue.js
 
-Blog Website Template built with VUE.js
+Blog Website Template built with Vue.js
 
 ## Objectives
 
-Follwing are the main objectives for this project.
+Why Build This?
 
-1. Learn VUE.js
+1. To Learn Vue.js.
+2. Nothing Else.
 
 ## Project setup
 
