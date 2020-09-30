@@ -33,41 +33,19 @@ export default {
   },
   data() {
     return {
-      footerPosts: [
-        {
-          id: 0,
-          imgSrc:
-            "https://images.unsplash.com/photo-1601214571524-34e8f3e46cc9?w=1500",
-          title:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate,aspernatur.",
-          authorId: 1,
-        },
-        {
-          id: 1,
-          imgSrc:
-            "https://images.unsplash.com/photo-1601214571524-34e8f3e46cc9?w=1500",
-          title:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate,aspernatur.",
-          authorId: 2,
-        },
-        {
-          id: 2,
-          imgSrc:
-            "https://images.unsplash.com/photo-1601214571524-34e8f3e46cc9?w=1500",
-          title:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate,aspernatur.",
-          authorId: 3,
-        },
-        {
-          id: 3,
-          imgSrc:
-            "https://images.unsplash.com/photo-1601214571524-34e8f3e46cc9?w=1500",
-          title:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate,aspernatur.",
-          authorId: 4,
-        },
-      ],
+      footerPosts: [],
     };
+  },
+  created() {
+    fetch(
+      "https://raw.githubusercontent.com/zainsci/Blog/master/src/data/Posts/All.json"
+    )
+      .then((res) => res.json())
+      .then((data) => {
+        for (let i = 3; i < 7; i++) {
+          this.footerPosts.push(data[i]);
+        }
+      });
   },
 };
 </script>
